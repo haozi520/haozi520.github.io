@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>timeclock</title>
+    <link href="/2023/06/27/timeclock/"/>
+    <url>/2023/06/27/timeclock/</url>
+    
+    <content type="html"><![CDATA[<h1 id="HTML网页时钟-公历日期（HTML-JavaScript）"><a href="#HTML网页时钟-公历日期（HTML-JavaScript）" class="headerlink" title="HTML网页时钟+公历日期（HTML+JavaScript）"></a>HTML网页时钟+公历日期（HTML+JavaScript）</h1><p>程序源代码如下</p><blockquote></blockquote><!--time clock(easy)--><!DOCTYPE html><html>    <head>    <meta charset="utf-8">        <style>        /*time clock style*/            #clock {                font-family: Arial, Helvetica, sans-serif;                font-size: 200px;                color: white;                background-color: black;                width: 500x;                height: 200px;                text-align: center;                line-height: 1000px;                border-radius: 10px;            }            #date {                font-family: Arial, Helvetica, sans-serif;                font-size: 100px;                color: white;                background-color: black;                width: auto;                height: auto;                text-align: center;                line-height: 1000px;                border-radius: 10px;            }        </style>    </head>    <body>        <!--create a div to show clock-->        <div id="clock"></div>        <!--<javascript code-->        <script>            // set a function to update clock            function updateClock() {            // set now time            var now = new Date();            // set now hour minutes second            var hour = now.getHours();            var minute = now.getMinutes();            var second = now.getSeconds();            var millisecond = now.getMilliseconds();            // if? add zero            if (hour < 10){                hour = "0" + hour;            }            if (minute < 10){                minute = "0" + minute;            }            if (second < 10){                second = "0" +second;            }            // mix to time stlye            var time = hour + ":" + minute + ":" +second; //+ ":" +millisecond;            // time to show in div            document.getElementById("clock").innerHTML = time;            }            // every second update time function            setInterval(updateClock,1000);        </script>        <div id="date"></div>        <script>            function updateDate() {                var now = new Date();                var year = now.getFullYear();                var month = now.getMonth() + 1;                var day = now.getDate();                if (month < 10){                    month = + month;                }                if (day < 10){                    day = + day;                }            var date = year +"年"+ month +"月"+ day +"日" ;            document.getElementById("date").innerHTML = date;           }            setInterval(updateDate,1000);        </script>    </body></html>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学习</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>人生格言篇（持续更新中）</title>
     <link href="/2023/06/09/1/"/>
     <url>/2023/06/09/1/</url>
