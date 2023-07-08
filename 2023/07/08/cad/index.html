@@ -16,24 +16,31 @@
   <meta name="author" content="HaoziOpO Studio Offical">
   <meta name="keywords" content="HaoziOpO Studio , 耗子OPO工作室">
   
-    <meta name="description" content="HTML网页时钟+公历日期（HTML+JavaScript）程序效果如下                               &#x2F;*time clock style*&#x2F;             #clock {                 font-family: Arial, Helvetica, sans-serif;                 font-size: 200px">
+    <meta name="description" content="AutoCAD2007 notes（2023.7.6-？）editor：yuan hao快捷指令篇常用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="timeclock">
-<meta property="og:url" content="http://haozi520.github.io/2023/06/27/timeclock/index.html">
+<meta property="og:title" content="CAD学习笔记（EDITER：YH)">
+<meta property="og:url" content="http://haozi520.github.io/2023/07/08/cad/index.html">
 <meta property="og:site_name" content="HaoziOpO Studio">
-<meta property="og:description" content="HTML网页时钟+公历日期（HTML+JavaScript）程序效果如下                               &#x2F;*time clock style*&#x2F;             #clock {                 font-family: Arial, Helvetica, sans-serif;                 font-size: 200px">
+<meta property="og:description" content="AutoCAD2007 notes（2023.7.6-？）editor：yuan hao快捷指令篇常用">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-06-27T09:54:15.000Z">
-<meta property="article:modified_time" content="2023-06-27T10:10:44.638Z">
+<meta property="og:image" content="https://i.postimg.cc/KvtD51g1/1.png">
+<meta property="og:image" content="https://i.postimg.cc/mgw30KjR/2.png">
+<meta property="og:image" content="https://i.postimg.cc/Bnsc7JxM/3.png">
+<meta property="og:image" content="https://i.postimg.cc/qRt86qTM/4.png">
+<meta property="og:image" content="https://i.postimg.cc/DzprzsRM/5.png">
+<meta property="og:image" content="https://i.postimg.cc/vmZ7MX2n/6.png">
+<meta property="article:published_time" content="2023-07-08T05:17:56.000Z">
+<meta property="article:modified_time" content="2023-07-08T05:19:15.940Z">
 <meta property="article:author" content="HaoziOpO Studio Offical">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.postimg.cc/KvtD51g1/1.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>timeclock - HaoziOpO Studio</title>
+  <title>CAD学习笔记（EDITER：YH) - HaoziOpO Studio</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -210,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="timeclock"></span>
+            <span id="subtitle" data-typed-text="CAD学习笔记（EDITER：YH)"></span>
           
         </div>
 
@@ -226,8 +233,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-06-27 17:54" pubdate>
-          2023年6月27日 下午
+        <time datetime="2023-07-08 13:17" pubdate>
+          2023年7月8日 下午
         </time>
       </span>
     
@@ -238,7 +245,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3k 字
+          49 字
         
       </span>
     
@@ -249,7 +256,7 @@
         
         
         
-          25 分钟
+          1 分钟
         
       </span>
     
@@ -295,12 +302,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">timeclock</h1>
+            <h1 style="display: none">CAD学习笔记（EDITER：YH)</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年6月27日 晚上
+                    本文最后更新于：2023年7月8日 下午
                   
                 
               </p>
@@ -308,176 +315,7 @@
             
               <div class="markdown-body">
                 
-                <h1 id="HTML网页时钟-公历日期（HTML-JavaScript）"><a href="#HTML网页时钟-公历日期（HTML-JavaScript）" class="headerlink" title="HTML网页时钟+公历日期（HTML+JavaScript）"></a>HTML网页时钟+公历日期（HTML+JavaScript）</h1><p>程序效果如下</p>
-<!--time clock(easy)-->
-<!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="utf-8">
-        <style>
-        /*time clock style*/
-            #clock {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 200px;
-                color: white;
-                background-color: black;
-                width: 500x;
-                height: 200px;
-                text-align: center;
-                line-height: 500px;
-                border-radius: 10px;
-            }
-            #date {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 100px;
-                color: white;
-                background-color: black;
-                width: auto;
-                height: auto;
-                text-align: center;
-                line-height: 500px;
-                border-radius: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <!--create a div to show clock-->
-        <div id="clock"></div>
-        <!--<javascript code-->
-        <script>
-            // set a function to update clock
-            function updateClock() {
-            // set now time
-            var now = new Date();
-            // set now hour minutes second
-            var hour = now.getHours();
-            var minute = now.getMinutes();
-            var second = now.getSeconds();
-            var millisecond = now.getMilliseconds();
-            // if? add zero
-            if (hour < 10){
-                hour = "0" + hour;
-            }
-            if (minute < 10){
-                minute = "0" + minute;
-            }
-            if (second < 10){
-                second = "0" +second;
-            }
-            // mix to time stlye
-            var time = hour + ":" + minute + ":" +second; + ":" +millisecond;
-            // time to show in div
-            document.getElementById("clock").innerHTML = time;
-            }
-            // every second update time function
-            setInterval(updateClock,1000);
-        </script>
-        <div id="date"></div>
-        <script>
-            function updateDate() {
-                var now = new Date();
-                var year = now.getFullYear();
-                var month = now.getMonth() + 1;
-                var day = now.getDate();
-                if (month < 10){
-                    month = + month;
-                }
-                if (day < 10){
-                    day = + day;
-                }
-            var date = year +"年"+ month +"月"+ day +"日" ;
-            document.getElementById("date").innerHTML = date;
-           }
-            setInterval(updateDate,1000);
-        </script>
-    </body>
-</html>
-
-<hr>
-<h2 id="程序代码"><a href="#程序代码" class="headerlink" title="程序代码"></a>程序代码</h2><pre><code class="hljs">&lt;!--time clock(easy)--&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;style&gt;
-    /*time clock style*/
-        #clock &#123;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 200px;
-            color: white;
-            background-color: black;
-            width: 500x;
-            height: 200px;
-            text-align: center;
-            line-height: 1000px;
-            border-radius: 10px;
-        &#125;
-        #date &#123;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 100px;
-            color: white;
-            background-color: black;
-            width: auto;
-            height: auto;
-            text-align: center;
-            line-height: 1000px;
-            border-radius: 10px;
-        &#125;
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;!--create a div to show clock--&gt;
-    &lt;div id=&quot;clock&quot;&gt;&lt;/div&gt;
-    &lt;!--&lt;javascript code--&gt;
-    &lt;script&gt;
-        // set a function to update clock
-        function updateClock() &#123;
-        // set now time
-        var now = new Date();
-        // set now hour minutes second
-        var hour = now.getHours();
-        var minute = now.getMinutes();
-        var second = now.getSeconds();
-        var millisecond = now.getMilliseconds();
-        // if? add zero
-        if (hour &lt; 10)&#123;
-            hour = &quot;0&quot; + hour;
-        &#125;
-        if (minute &lt; 10)&#123;
-            minute = &quot;0&quot; + minute;
-        &#125;
-        if (second &lt; 10)&#123;
-            second = &quot;0&quot; +second;
-        &#125;
-        // mix to time stlye
-        var time = hour + &quot;:&quot; + minute + &quot;:&quot; +second; //+ &quot;:&quot; +millisecond;
-        // time to show in div
-        document.getElementById(&quot;clock&quot;).innerHTML = time;
-        &#125;
-        // every second update time function
-        setInterval(updateClock,1000);
-    &lt;/script&gt;
-    &lt;div id=&quot;date&quot;&gt;&lt;/div&gt;
-    &lt;script&gt;
-        function updateDate() &#123;
-            var now = new Date();
-            var year = now.getFullYear();
-            var month = now.getMonth() + 1;
-            var day = now.getDate();
-            if (month &lt; 10)&#123;
-                month = + month;
-            &#125;
-            if (day &lt; 10)&#123;
-                day = + day;
-            &#125;
-        var date = year +&quot;年&quot;+ month +&quot;月&quot;+ day +&quot;日&quot; ;
-        document.getElementById(&quot;date&quot;).innerHTML = date;
-       &#125;
-        setInterval(updateDate,1000);
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+                <h1 id="AutoCAD2007-notes（2023-7-6-？）editor：yuan-hao"><a href="#AutoCAD2007-notes（2023-7-6-？）editor：yuan-hao" class="headerlink" title="AutoCAD2007 notes（2023.7.6-？）editor：yuan hao"></a>AutoCAD2007 notes（2023.7.6-？）editor：yuan hao</h1><h2 id="快捷指令篇"><a href="#快捷指令篇" class="headerlink" title="快捷指令篇"></a>快捷指令篇</h2><h3 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h3><p><img src="https://i.postimg.cc/KvtD51g1/1.png" srcset="/img/loading.gif" lazyload alt="1"><br><img src="https://i.postimg.cc/mgw30KjR/2.png" srcset="/img/loading.gif" lazyload alt="2"><br><img src="https://i.postimg.cc/Bnsc7JxM/3.png" srcset="/img/loading.gif" lazyload alt="3"><br><img src="https://i.postimg.cc/qRt86qTM/4.png" srcset="/img/loading.gif" lazyload alt="4"><br><img src="https://i.postimg.cc/DzprzsRM/5.png" srcset="/img/loading.gif" lazyload alt="5"><br><img src="https://i.postimg.cc/vmZ7MX2n/6.png" srcset="/img/loading.gif" lazyload alt="6"></p>
 
                 
               </div>
@@ -502,8 +340,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>timeclock</div>
-      <div>http://haozi520.github.io/2023/06/27/timeclock/</div>
+      <div>CAD学习笔记（EDITER：YH)</div>
+      <div>http://haozi520.github.io/2023/07/08/cad/</div>
     </div>
     <div class="license-meta">
       
@@ -515,13 +353,13 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年6月27日</div>
+          <div>2023年7月8日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年6月27日</div>
+          <div>2023年7月8日</div>
         </div>
       
       
@@ -552,18 +390,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/08/cad/" title="CAD学习笔记（EDITER：YH)">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">CAD学习笔记（EDITER：YH)</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/06/09/1/" title="人生格言篇（持续更新中）">
-                        <span class="hidden-mobile">人生格言篇（持续更新中）</span>
+                      <a href="/2023/06/27/timeclock/" title="timeclock">
+                        <span class="hidden-mobile">timeclock</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -576,7 +408,7 @@
             
   <article id="comments" lazyload>
     
-  <div id="SOHUCS" sid='http://haozi520.github.io/2023/06/27/timeclock/'></div>
+  <div id="SOHUCS" sid='http://haozi520.github.io/2023/07/08/cad/'></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#SOHUCS', function() {
       Fluid.utils.createScript("https://changyan.sohu.com/upload/changyan.js", function() {
