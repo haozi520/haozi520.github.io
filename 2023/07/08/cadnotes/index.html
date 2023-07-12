@@ -24,7 +24,7 @@
 <meta property="og:description" content="AUTOCAD2007 NOTES（2023.7.6-？） editer：yuan hao1.1 第一课时：AUTOCAD入门 耗子前言: “&#x2F;“表示“或者”的意思，大多数时候每个知识点独立，很多换行后表示两个或者多个选择，递增逻辑   AutoCAD2007界面介绍   知识点（随堂记未整理）   .dwg为cad项目文件格式，    左侧是工具栏，   白色区域是绘图区域，  菜单区">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-08T10:47:38.000Z">
-<meta property="article:modified_time" content="2023-07-12T05:26:39.984Z">
+<meta property="article:modified_time" content="2023-07-12T10:36:49.977Z">
 <meta property="article:author" content="HaoziOpO Studio Offical">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -238,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.8k 字
+          6.5k 字
         
       </span>
     
@@ -249,7 +249,7 @@
         
         
         
-          49 分钟
+          54 分钟
         
       </span>
     
@@ -300,7 +300,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年7月12日 下午
+                    本文最后更新于：2023年7月12日 晚上
                   
                 
               </p>
@@ -1037,9 +1037,110 @@
 </li>
 </ul>
 </li>
-<li></li>
 </ul>
-
+<h3 id="设置标注样式（用来完美标注圆的半径，直径-角度-符号）"><a href="#设置标注样式（用来完美标注圆的半径，直径-角度-符号）" class="headerlink" title="设置标注样式（用来完美标注圆的半径，直径 角度 符号）"></a>设置标注样式（用来完美标注圆的半径，直径 角度 符号）</h3><ul>
+<li>新建（基于上文的机械设计用来标圆半径）<ul>
+<li>机械设计半径标注</li>
+<li>基础样式：上文的机械设计</li>
+<li>用于：半径标注<ul>
+<li>调整<ul>
+<li>文字和箭头</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>新建（基于上文的机械设计用来标圆直径）<ul>
+<li>机械设计直径标注</li>
+<li>基础样式：上文的机械设计</li>
+<li>用于：直径标注<ul>
+<li>调整<ul>
+<li>文字和箭头</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>新建（基于上文的机械设计用来标角度）<ul>
+<li>机械设计角度标注</li>
+<li>基础样式：上文的机械设计</li>
+<li>用于：角度标注<ul>
+<li>文字<ul>
+<li>文字位置：<ul>
+<li>垂直： 外部</li>
+</ul>
+</li>
+<li>文字对齐（新版在文字方向）：<ul>
+<li>水平</li>
+</ul>
+</li>
+<li>新版文字方向<ul>
+<li>在尺寸界线外&#x2F;内：全部水平</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>新建（基于上文的机械设计用来 非圆标注直径）<ul>
+<li>机械设计非圆标注直径</li>
+<li>基础样式：上文的机械设计</li>
+<li>用于：所有标注（这个和机械设计属于同级别）<ul>
+<li>主单位<ul>
+<li>线性标注<ul>
+<li>前缀：%%c</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="各种标注样式"><a href="#各种标注样式" class="headerlink" title="各种标注样式"></a>各种标注样式</h3><ul>
+<li>改标注文字（引出上文非圆标注直径）<ul>
+<li>标注（未放置） M 右键选择字母 度数&#x2F;正负&#x2F;直径&#x2F;<ul>
+<li>快捷即直接输入字母<ul>
+<li>度数 %%d</li>
+<li>正&#x2F;负 %%p</li>
+<li>直径 %%c</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>公差标注【标多行文字时候（如果前面是正号用空格）】<ul>
+<li>%%c20%%p0.05<ul>
+<li>此文字代表直径20，公差正负0.05</li>
+</ul>
+</li>
+<li>%%c20空格0^-0.05<ul>
+<li>此文字代表直径20，公差-0.05</li>
+</ul>
+</li>
+<li>%%c20空格0.05^-0.05<ul>
+<li>此文字代表直径20，公差0.05</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>堆叠<ul>
+<li>选中后点高亮（公差标注如果有空格也把空格选中）</li>
+<li>分数<ul>
+<li>1&#x2F;4 或 1#4 选中后堆叠都是分数形式</li>
+<li>1 1&#x2F;4 选中后面1&#x2F;4即带分数 1又四分之一</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-12-第十二课时：案例11：平面图1"><a href="#1-12-第十二课时：案例11：平面图1" class="headerlink" title="1.12 第十二课时：案例11：平面图1"></a>1.12 第十二课时：案例11：平面图1</h2><h3 id="1-1-1-12入门篇"><a href="#1-1-1-12入门篇" class="headerlink" title="1.1-1.12入门篇"></a>1.1-1.12入门篇</h3>
                 
               </div>
             
