@@ -16,15 +16,15 @@
   <meta name="author" content="HaoziOpO Studio Offical">
   <meta name="keywords" content="HaoziOpO Studio , 耗子OPO工作室">
   
-    <meta name="description" content="&#x2F;*time clock style*&#x2F;         #clock {             font-family: Arial, Helvetica, sans-serif;             font-size: 90px;             color: white;             background-color: black;">
+    <meta name="description" content="&#x2F;*time clock style*&#x2F;         #clock {             font-family: Arial, Helvetica, sans-serif;             background-image: -webkit-linear-gradient(left,#D81159, #E53A40 10%, #FFBC42 20%,">
 <meta property="og:type" content="website">
 <meta property="og:title" content="TIME">
 <meta property="og:url" content="http://haozi520.github.io/TIME/index.html">
 <meta property="og:site_name" content="HaoziOpO Studio">
-<meta property="og:description" content="&#x2F;*time clock style*&#x2F;         #clock {             font-family: Arial, Helvetica, sans-serif;             font-size: 90px;             color: white;             background-color: black;">
+<meta property="og:description" content="&#x2F;*time clock style*&#x2F;         #clock {             font-family: Arial, Helvetica, sans-serif;             background-image: -webkit-linear-gradient(left,#D81159, #E53A40 10%, #FFBC42 20%,">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-13T11:49:48.000Z">
-<meta property="article:modified_time" content="2023-07-15T01:36:51.636Z">
+<meta property="article:modified_time" content="2023-07-17T07:58:02.920Z">
 <meta property="article:author" content="HaoziOpO Studio Offical">
 <meta property="article:tag" content="HaoziOpO Studio , 耗子OPO工作室">
 <meta name="twitter:card" content="summary_large_image">
@@ -241,29 +241,43 @@
     /*time clock style*/
         #clock {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 90px;
-            color: white;
-            background-color: black;
+            background-image: -webkit-linear-gradient(left,#D81159, #E53A40 10%, #FFBC42 20%, #75D701 30%, #30A9DE 40%,#D81159 50%, #E53A40 60%, #FFBC42 70%, #75D701 80%, #30A9DE 90%,#D81159);
+            -webkit-background-clip: text;
+            color:transparent;
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-color: transparent; 
+            font-size:70px;
             width: auto;
             height: auto;
             text-align: center;
-            line-height: 200px;
-            border-radius: 10px;
+            line-height: 100px;
+            border-radius: 1px;
         }
         #date {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 70px;
-            color: white;
-            background-color: black;
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 40px;
+            font-weight: bolder; 
+            color: green; 
+            background-color: transparent; 
             width: auto;
             height: auto;
             text-align: center;
-            line-height: 200px;
+            line-height: 100px;
             border-radius: 10px;
+        }
+        .text{
+            font-size: 40px;
+            background-image: linear-gradient(#0842E4, #03FFB4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -webkit-text-stroke: 2px #333;
         }
     </style>
 </head>
 <body>
+<p class="text">渐变文字时钟+今日日期</p>
     <!--create a div to show clock-->
     <div id="clock"></div>
     <!--<javascript code-->
