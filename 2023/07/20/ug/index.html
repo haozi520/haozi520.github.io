@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://haozi520.github.io/pic/UG.jpg">
 <meta property="article:published_time" content="2023-07-20T03:46:27.000Z">
-<meta property="article:modified_time" content="2023-07-28T09:30:19.590Z">
+<meta property="article:modified_time" content="2023-07-29T07:03:04.525Z">
 <meta property="article:author" content="HaoziOpO Studio Offical">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          6k 字
+          6.5k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          51 分钟
+          54 分钟
         
       </span>
     
@@ -302,7 +302,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年7月28日 下午
+                    本文最后更新于：2023年7月29日 下午
                   
                 
               </p>
@@ -1208,6 +1208,95 @@
 <ul>
 <li>这种图的作图思路是底面和体的求差</li>
 </ul>
+<h2 id="3-1-项目12：案例1——抽壳、筋板、拔模"><a href="#3-1-项目12：案例1——抽壳、筋板、拔模" class="headerlink" title="3.1 项目12：案例1——抽壳、筋板、拔模"></a>3.1 项目12：案例1——抽壳、筋板、拔模</h2><p><img src="/pic/3.1.jpg" srcset="/img/loading.gif" lazyload alt="3.1"><img src="/pic/3.11.png" srcset="/img/loading.gif" lazyload alt="3.11"><img src="/pic/3.12.png" srcset="/img/loading.gif" lazyload alt="3.12"></p>
+<h3 id="做此图的思路步骤"><a href="#做此图的思路步骤" class="headerlink" title="做此图的思路步骤"></a>做此图的思路步骤</h3><ol>
+<li>先做长方体，然后做两条曲线，扫掠，然后修剪体</li>
+<li>然后拔模</li>
+<li>最后抽壳（变厚度抽壳）</li>
+</ol>
+<h3 id="右键物体弹出操作"><a href="#右键物体弹出操作" class="headerlink" title="右键物体弹出操作"></a>右键物体弹出操作</h3><ul>
+<li>抑制 指左边的部件管理器里不打√</li>
+<li>隐藏</li>
+<li>删除</li>
+<li>可回滚编辑</li>
+<li>编辑参数</li>
+<li>浏览</li>
+</ul>
+<h3 id="修剪体"><a href="#修剪体" class="headerlink" title="修剪体"></a>修剪体</h3><ul>
+<li>菜单-插入-修剪-修剪体<ul>
+<li>选择目标</li>
+<li>选择面或平面<ul>
+<li>曲面要提前创建</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="拔模-1"><a href="#拔模-1" class="headerlink" title="拔模"></a>拔模</h3><ul>
+<li>菜单-插入-细节特征-拔模<ul>
+<li>方法选择面</li>
+<li>指定脱模方向 指定矢量</li>
+<li>拔模参考-方法-固定面 选择固定面</li>
+<li>要拔模的面-选择面</li>
+<li>角度 输入角度</li>
+<li>确定即可</li>
+</ul>
+</li>
+<li>如果要连续角度不同的拔模就用列表<ul>
+<li>添加新集<ul>
+<li>改角度</li>
+<li>点面确定即可</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="抽壳（变厚度抽壳）"><a href="#抽壳（变厚度抽壳）" class="headerlink" title="抽壳（变厚度抽壳）"></a>抽壳（变厚度抽壳）</h3><ul>
+<li>菜单-插入-偏置&#x2F;缩放-抽壳<ul>
+<li>选择移除面，然后抽壳</li>
+<li>要穿透的面就是要移除的面</li>
+<li>输入厚度</li>
+<li>备选厚度就是不同的面厚度不同时候用的<ul>
+<li>选备用宽度时最好过滤器选择面与相邻面</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>扩展（对所有的面抽壳）<ul>
+<li>选择对所有的面抽壳</li>
+<li>选择体</li>
+<li>输入厚度</li>
+</ul>
+</li>
+</ul>
+<h3 id="筋板"><a href="#筋板" class="headerlink" title="筋板"></a>筋板</h3><ul>
+<li>菜单-插入-设计特征-筋板<ul>
+<li>选择体</li>
+<li>选择截面线 这个是草图，需要自己画一个</li>
+<li>壁<ul>
+<li>垂直于剖切平面</li>
+<li>平行于剖切平面</li>
+</ul>
+</li>
+<li>合并筋板和目标，这个就是求和</li>
+<li>尺寸 </li>
+<li>厚度</li>
+<li>帽形体<ul>
+<li>几何体 从截面</li>
+<li>偏置</li>
+</ul>
+</li>
+<li>拔模<ul>
+<li>使用封盖</li>
+<li>输入角度</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="部件导航器的部件顺序"><a href="#部件导航器的部件顺序" class="headerlink" title="部件导航器的部件顺序"></a>部件导航器的部件顺序</h3><ul>
+<li>用鼠标左键点击往上拖即可改变顺序（用于可回滚编辑中使用）</li>
+</ul>
 
                 
               </div>
@@ -1251,7 +1340,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年7月28日</div>
+          <div>2023年7月29日</div>
         </div>
       
       
