@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://haozi520.github.io/pic/UG.jpg">
 <meta property="article:published_time" content="2023-07-20T03:46:27.000Z">
-<meta property="article:modified_time" content="2023-08-07T05:28:35.993Z">
+<meta property="article:modified_time" content="2023-08-07T10:23:59.043Z">
 <meta property="article:author" content="HaoziOpO Studio Offical">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          11k 字
+          12k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          89 分钟
+          100 分钟
         
       </span>
     
@@ -302,7 +302,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年8月7日 下午
+                    本文最后更新于：2023年8月7日 晚上
                   
                 
               </p>
@@ -1777,6 +1777,8 @@
 <li>装配约束扩展<ul>
 <li>首选接触（接触、对齐）<ul>
 <li>首选接触</li>
+<li>接触 指面和面接触，可以使部件旋转</li>
+<li>对齐，两个矢量对齐，部件只会对齐</li>
 <li>碰面，然后选轴线<ul>
 <li>然后选择要约束到的面的轴线</li>
 </ul>
@@ -1845,9 +1847,169 @@
 <li>对齐和锁定是专门用来装螺栓的，因为正常约束之后螺栓还是可以转的，所以使用对齐和锁定</li>
 </ul>
 <h2 id="5-2-自定向上—机用平口虎钳（爆炸图、子装配、替换组件）"><a href="#5-2-自定向上—机用平口虎钳（爆炸图、子装配、替换组件）" class="headerlink" title="5.2 自定向上—机用平口虎钳（爆炸图、子装配、替换组件）"></a>5.2 自定向上—机用平口虎钳（爆炸图、子装配、替换组件）</h2><p><img src="/pic/5.21.png" srcset="/img/loading.gif" lazyload alt="5.21"><img src="/pic/5.22.png" srcset="/img/loading.gif" lazyload alt="5.22"><img src="/pic/5.23.jpg" srcset="/img/loading.gif" lazyload alt="5.23"></p>
-<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ul>
-<li>先建一个项目文件夹，然后将所有要装配的部件放进文件夹里，然后将可重用部件库设置为此文件夹，然后去创建装配项目，在此装配文件夹，然后</li>
+<h3 id="装配图步骤"><a href="#装配图步骤" class="headerlink" title="装配图步骤"></a>装配图步骤</h3><ul>
+<li>先建一个项目文件夹，然后将所有要装配的部件放进文件夹里，然后将可重用部件库设置为此文件夹，然后去创建装配项目保存在在此装配文件夹</li>
+<li>然后进行第一个部件的添加，然后将第一个部件固定，通过约束将其固定，然后去查看自由度（见图）确定是否固定，在添加部件时可以选择引用集<br><img src="/pic/5.24.jpg" srcset="/img/loading.gif" lazyload alt="查看自由度"></li>
+<li>然后去添加第二个部件，在添加部件对话框下，有个启用窗口预览和预览，如果觉得预览这个部件进去会很难约束，就关掉预览，然后再预览窗口进行约束，在这个添加组件的对话框进行约束，然后勾选预览确定是否约束到你想要的约束，然后去右键查看自由度，如果还有自由度就去约束</li>
+<li>然后如果下一个和另一个未进行装配的部件要去先进行装配的话，就新建一个装配的项目文件保存位置在此文件夹，这步称为子装配，然后就是刚刚的步骤</li>
+<li>重用库正确（修改路径，重新启动UG）对齐和锁定约束<ul>
+<li>首先要点击文件-实用工具-用户默认设置<ul>
+<li>基本环境-重用库-可重用组件<ul>
+<li>点击图中的Windows下的浏览键<ul>
+<li>然后将其设置为你此装配文件的目录下<ul>
+<li>然后确定重新启动UG（记得保存你装配的文件，快速保存快捷键ctrl+s）<ul>
+<li>最后再去装重用库里的文件即可，不然下次打开文件不会显示</li>
 </ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="爆炸图"><a href="#爆炸图" class="headerlink" title="爆炸图"></a>爆炸图</h3><ul>
+<li>装配-爆炸图    </li>
+<li>然后爆炸图三角部分<ul>
+<li>新建爆炸<ul>
+<li>新建爆炸图</li>
+</ul>
+</li>
+<li>编辑爆炸<ul>
+<li>选择对象<ul>
+<li>然后点击移动对象（或点击滚轮）去移动到你想移动的位置（通常是装配的反方向）</li>
+</ul>
+</li>
+<li>编辑爆炸的连续方法是选择第一个对象之后移动之后，按住shift反向此对象，然后点击第二个你想爆炸的部件继续重复操作即可</li>
+</ul>
+</li>
+<li>自动爆炸组件（不常用）</li>
+<li>取消爆炸组件</li>
+<li>删除爆炸</li>
+<li>追踪线<ul>
+<li>做爆炸图动画用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="导出图片"><a href="#导出图片" class="headerlink" title="导出图片"></a>导出图片</h3><ul>
+<li>文件-导出-图像（见图）<ul>
+<li>输入<ul>
+<li>区域—你所选的区域<ul>
+<li>格式</li>
+<li>位置 选择你想导出的位置即可</li>
+<li>背景选项<ul>
+<li>原先</li>
+<li>定制颜色</li>
+<li>透明</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>图形区域—所有图形的区域图片</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/pic/5.25.png" srcset="/img/loading.gif" lazyload alt="导出图片"><img src="/pic/5.26.png" srcset="/img/loading.gif" lazyload alt="导出图片对话框"></p>
+<h3 id="做装配图会出现的问题"><a href="#做装配图会出现的问题" class="headerlink" title="做装配图会出现的问题"></a>做装配图会出现的问题</h3><ol>
+<li><img src="/pic/question1.png" srcset="/img/loading.gif" lazyload alt="1"></li>
+</ol>
+<ul>
+<li>造成的原因：部件改名&#x2F;部件被移动</li>
+<li>解决方法：将丢失的部件右键替换组件找到要替换的组件即可</li>
+</ul>
+<ol start="2">
+<li>重用库螺钉不出现</li>
+</ol>
+<ul>
+<li>造成的原因：部件改名&#x2F;部件文件夹改名&#x2F;此文件夹目录某一文件夹改名&#x2F;重用库位置不在文件夹位置</li>
+<li>解决办法：重新选择重用库位置路径即可</li>
+</ul>
+<h2 id="5-3-自顶向下—wave设计阀体"><a href="#5-3-自顶向下—wave设计阀体" class="headerlink" title="5.3 自顶向下—wave设计阀体"></a>5.3 自顶向下—wave设计阀体</h2><p><img src="/pic/5.3.png" srcset="/img/loading.gif" lazyload alt="5.3"></p>
+<h2 id="6-1-项目1：案例1——基本视图、投影视图、向视图、单一剖、阶梯剖全剖（6-16-3-第六单元：制图模块）"><a href="#6-1-项目1：案例1——基本视图、投影视图、向视图、单一剖、阶梯剖全剖（6-16-3-第六单元：制图模块）" class="headerlink" title="6.1 项目1：案例1——基本视图、投影视图、向视图、单一剖、阶梯剖全剖（6.16.3 第六单元：制图模块）"></a>6.1 项目1：案例1——基本视图、投影视图、向视图、单一剖、阶梯剖全剖（6.16.3 第六单元：制图模块）</h2><h3 id="图纸"><a href="#图纸" class="headerlink" title="图纸"></a>图纸</h3><ul>
+<li>应用模块-制图<ul>
+<li>主页-新建图纸页<ul>
+<li>使用模板<ul>
+<li>A0+ A0 A1 A2 A3 A4 A0++装配</li>
+</ul>
+</li>
+<li>标准尺寸<ul>
+<li>选择大小，比例</li>
+</ul>
+</li>
+<li>定制尺寸<ul>
+<li>自己输入数值<ul>
+<li>确定即可，弹出来的框一般点击取消</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>然后会出现制图框表格，如果没有就去按照图中的制图框表格模板替换即可</li>
+</ul>
+<p><img src="/pic/6.1.jpg" srcset="/img/loading.gif" lazyload alt="制图框表格"><img src="/pic/6.11.jpg" srcset="/img/loading.gif" lazyload alt="制图框表格模板替换"></p>
+<h3 id="投影视图"><a href="#投影视图" class="headerlink" title="投影视图"></a>投影视图</h3><ul>
+<li>菜单-插入-视图-投影</li>
+<li>见图中，以俯视图为主的向左向右向上向下的图会自动捕捉（如果不想自动捕捉，按住alt键—-引出向视图）</li>
+</ul>
+<p><img src="/pic/6.12.jpg" srcset="/img/loading.gif" lazyload alt="投影视图"></p>
+<h3 id="向视图"><a href="#向视图" class="headerlink" title="向视图"></a>向视图</h3><ul>
+<li>在投影试图中，按住alt键放在相放的地方<ul>
+<li>定义铰链线（铰链线时指黄色的横线）<ul>
+<li>已定义要选择两点之间或者线</li>
+<li>自动判断即alt键按住的判断</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="基本视图"><a href="#基本视图" class="headerlink" title="基本视图"></a>基本视图</h3><ul>
+<li>主页-基本视图</li>
+<li>菜单-插入-视图-基本<ul>
+<li>模型视图<ul>
+<li>正等测图&#x2F;正三轴测图</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/pic/6.13.jpg" srcset="/img/loading.gif" lazyload alt="基本视图对话框"></p>
+<h3 id="定向视图"><a href="#定向视图" class="headerlink" title="定向视图"></a>定向视图</h3><ul>
+<li>主页-基本视图-定向视图<ul>
+<li>将其摆成你想要的视图效果确定，然后放置即可</li>
+</ul>
+</li>
+</ul>
+<h3 id="单一剖视图（要达到6-11图中的效果的视图）"><a href="#单一剖视图（要达到6-11图中的效果的视图）" class="headerlink" title="单一剖视图（要达到6.11图中的效果的视图）"></a>单一剖视图（要达到6.11图中的效果的视图）</h3><ul>
+<li>菜单-插入-视图-剖视图<ul>
+<li>剖视图对话框（见6.12图）<ul>
+<li>简单剖&#x2F;阶梯剖<ul>
+<li>视图效果见6.13（简单剖）</li>
+<li>视图效果见6.14（简单剖基础的右键设置为阶梯剖）<ul>
+<li>右键刚刚的简单剖视图编辑，然后指定位置再选定那两个圆，再微调位置即可</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>半剖</li>
+<li>旋转</li>
+<li>点到点</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/pic/6.14.jpg" srcset="/img/loading.gif" lazyload alt="6.11"><img src="/pic/6.15.jpg" srcset="/img/loading.gif" lazyload alt="6.12"><img src="/pic/6.16.jpg" srcset="/img/loading.gif" lazyload alt="6.13"><img src="/pic/6.17.jpg" srcset="/img/loading.gif" lazyload alt="6.14"></p>
 
                 
               </div>
