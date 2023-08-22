@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://haozi520.github.io/pic/time.png">
 <meta property="article:published_time" content="2023-06-27T09:54:15.000Z">
-<meta property="article:modified_time" content="2023-07-19T10:16:08.019Z">
+<meta property="article:modified_time" content="2023-08-22T10:03:18.241Z">
 <meta property="article:author" content="HaoziOpO Studio Offical">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.6k 字
+          4.3k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          31 分钟
+          37 分钟
         
       </span>
     
@@ -302,7 +302,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年7月19日 晚上
+                    本文最后更新于：2023年8月22日 晚上
                   
                 
               </p>
@@ -418,82 +418,99 @@
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;style&gt;
-    /*time clock style*/
-        #clock &#123;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 200px;
-            color: white;
-            background-color: black;
-            width: 500x;
-            height: 200px;
-            text-align: center;
-            line-height: 1000px;
-            border-radius: 10px;
-        &#125;
-        #date &#123;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 100px;
-            color: white;
-            background-color: black;
-            width: auto;
-            height: auto;
-            text-align: center;
-            line-height: 1000px;
-            border-radius: 10px;
-        &#125;
-    &lt;/style&gt;
+&lt;style&gt;
+/*time clock style*/
+    #clock &#123;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: -webkit-linear-gradient(left,#D81159, #E53A40 10%, #FFBC42 20%, #75D701 30%, #30A9DE 40%,#D81159 50%, #E53A40 60%, #FFBC42 70%, #75D701 80%, #30A9DE 90%,#D81159);
+        -webkit-background-clip: text;
+        color:transparent;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        background-color: transparent; 
+        font-size:70px;
+        width: auto;
+        height: auto;
+        text-align: center;
+        line-height: 100px;
+    &#125;
+    #date &#123;
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 40px;
+        font-weight: bolder; 
+        background-image: linear-gradient(#FFAC03, #DE03FF,#03FFBC,#71FF03,#FFC503);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -webkit-text-stroke: 1px #333;
+        width: auto;
+        height: auto;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 10px;
+    &#125;
+    .text&#123;
+        font-size: 40px;
+        text-align:center;
+        background-image: linear-gradient(#0842E4, #03FFB4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -webkit-text-stroke: 1px #333;
+    &#125;
+&lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;!--create a div to show clock--&gt;
-    &lt;div id=&quot;clock&quot;&gt;&lt;/div&gt;
-    &lt;!--&lt;javascript code--&gt;
-    &lt;script&gt;
-        // set a function to update clock
-        function updateClock() &#123;
-        // set now time
+&lt;p class=&quot;text&quot;&gt;渐变文字时钟+今日日期&lt;/p&gt;
+&lt;!--create a div to show clock--&gt;
+&lt;div id=&quot;clock&quot;&gt;&lt;/div&gt;
+&lt;!--&lt;javascript code--&gt;
+&lt;script&gt;
+    // set a function to update clock
+    function updateClock() &#123;
+    // set now time
+    var now = new Date();
+    // set now hour minutes second
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    var millisecond = now.getMilliseconds();
+    // if? add zero
+    if (hour &lt; 10)&#123;
+        hour = &quot;0&quot; + hour;
+    &#125;
+    if (minute &lt; 10)&#123;
+        minute = &quot;0&quot; + minute;
+    &#125;
+    if (second &lt; 10)&#123;
+        second = &quot;0&quot; +second;
+    &#125;
+    // mix to time stlye
+    var time = hour + &quot;:&quot; + minute + &quot;:&quot; +second + &quot;:&quot; +millisecond;
+    // time to show in div
+    document.getElementById(&quot;clock&quot;).innerHTML = time;
+    &#125;
+    // every second update time function
+    setInterval(updateClock,1);
+&lt;/script&gt;
+&lt;div id=&quot;date&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+    function updateDate() &#123;
         var now = new Date();
-        // set now hour minutes second
-        var hour = now.getHours();
-        var minute = now.getMinutes();
-        var second = now.getSeconds();
-        var millisecond = now.getMilliseconds();
-        // if? add zero
-        if (hour &lt; 10)&#123;
-            hour = &quot;0&quot; + hour;
+        var year = now.getFullYear();
+        var month = now.getMonth() + 1;
+        var day = now.getDate();
+        if (month &lt; 10)&#123;
+            month = + month;
         &#125;
-        if (minute &lt; 10)&#123;
-            minute = &quot;0&quot; + minute;
+        if (day &lt; 10)&#123;
+            day = + day;
         &#125;
-        if (second &lt; 10)&#123;
-            second = &quot;0&quot; +second;
-        &#125;
-        // mix to time stlye
-        var time = hour + &quot;:&quot; + minute + &quot;:&quot; +second; //+ &quot;:&quot; +millisecond;
-        // time to show in div
-        document.getElementById(&quot;clock&quot;).innerHTML = time;
-        &#125;
-        // every second update time function
-        setInterval(updateClock,1000);
-    &lt;/script&gt;
-    &lt;div id=&quot;date&quot;&gt;&lt;/div&gt;
-    &lt;script&gt;
-        function updateDate() &#123;
-            var now = new Date();
-            var year = now.getFullYear();
-            var month = now.getMonth() + 1;
-            var day = now.getDate();
-            if (month &lt; 10)&#123;
-                month = + month;
-            &#125;
-            if (day &lt; 10)&#123;
-                day = + day;
-            &#125;
-        var date = year +&quot;年&quot;+ month +&quot;月&quot;+ day +&quot;日&quot; ;
-        document.getElementById(&quot;date&quot;).innerHTML = date;
-       &#125;
-        setInterval(updateDate,1000);
-    &lt;/script&gt;
+    var date = year +&quot;年&quot;+ month +&quot;月&quot;+ day +&quot;日&quot; ;
+    document.getElementById(&quot;date&quot;).innerHTML = date;
+   &#125;
+    setInterval(updateDate,1000);
+&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -540,7 +557,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年7月19日</div>
+          <div>2023年8月22日</div>
         </div>
       
       
