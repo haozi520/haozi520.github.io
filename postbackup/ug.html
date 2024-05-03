@@ -1,316 +1,5 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/hz.png">
-  <link rel="icon" href="/img/hz.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="HaoziOpO Studio Offical">
-  <meta name="keywords" content="HaoziOpO Studio , 耗子OPO工作室">
-  
-    <meta name="description" content="UG NX12.0学习笔记（2023.7.20-8.13） 作者：袁昊本文前言 本笔记记录了耗子在2023年7月20日-2023年8月13日的UGNX12.0学习及其按照学习通老师所讲的内容所制成的目录，其中包含很多作者在学习过程中自行整理的内容和自己的见解，快捷指令和内容理解，本文共计耗时25天，写入字数1.5万字，插入图片若干，此文由Markdown语言编写，所以插入图片略微复杂，尽请见谅，如">
-<meta property="og:type" content="article">
-<meta property="og:title" content="UGNX12.0学习笔记">
-<meta property="og:url" content="http://haozi520.github.io/2023/07/20/ug/index.html">
-<meta property="og:site_name" content="HaoziOpO Studio">
-<meta property="og:description" content="UG NX12.0学习笔记（2023.7.20-8.13） 作者：袁昊本文前言 本笔记记录了耗子在2023年7月20日-2023年8月13日的UGNX12.0学习及其按照学习通老师所讲的内容所制成的目录，其中包含很多作者在学习过程中自行整理的内容和自己的见解，快捷指令和内容理解，本文共计耗时25天，写入字数1.5万字，插入图片若干，此文由Markdown语言编写，所以插入图片略微复杂，尽请见谅，如">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://haozi520.github.io/pic/UG.jpg">
-<meta property="article:published_time" content="2023-07-20T03:46:27.000Z">
-<meta property="article:modified_time" content="2023-08-13T05:37:45.842Z">
-<meta property="article:author" content="HaoziOpO Studio Offical">
-<meta property="article:tag" content="学习">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://haozi520.github.io/pic/UG.jpg">
-  
-  
-    <meta name="referrer" content="no-referrer-when-downgrade">
-  
-  
-  <title>UGNX12.0学习笔记 - HaoziOpO Studio</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"haozi520.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"#"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 70vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>HaoziOpO Studio</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/">
-                <i class="iconfont icon-link-fill"></i>
-                友链
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/time/">
-                <i class="iconfont icon-top"></i>
-                TIME
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/wallpaper.jpg') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="UGNX12.0学习笔记"></span>
-          
-        </div>
-
-        
-          
-  <div class="mt-3">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-author" aria-hidden="true"></i>
-        HaoziOpO Studio Offical
-      </span>
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-20 11:46" pubdate>
-          2023年7月20日 中午
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          14k 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          115 分钟
-        
-      </span>
-    
-
-    
-    
-      
-        <span id="busuanzi_container_page_pv" style="display: none">
-          <i class="iconfont icon-eye" aria-hidden="true"></i>
-          <span id="busuanzi_value_page_pv"></span> 次
-        </span>
-        
-      
-    
-  </div>
-
-
-        
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">UGNX12.0学习笔记</h1>
-            
-              <p class="note note-info">
-                
-                  
-                    本文最后更新于：2023年8月13日 下午
-                  
-                
-              </p>
-            
-            
-              <div class="markdown-body">
-                
-                <h1 id="UG-NX12-0学习笔记（2023-7-20-8-13）-作者：袁昊"><a href="#UG-NX12-0学习笔记（2023-7-20-8-13）-作者：袁昊" class="headerlink" title="UG NX12.0学习笔记（2023.7.20-8.13） 作者：袁昊"></a>UG NX12.0学习笔记（2023.7.20-8.13） 作者：袁昊</h1><h3 id="本文前言"><a href="#本文前言" class="headerlink" title="本文前言"></a>本文前言</h3><ul>
+<hr>
+<h2 id="title-UGNX12-0学习笔记index-img-x2F-pic-x2F-UG-jpgdate-2023-07-20-11-46-27tags-学习"><a href="#title-UGNX12-0学习笔记index-img-x2F-pic-x2F-UG-jpgdate-2023-07-20-11-46-27tags-学习" class="headerlink" title="title: UGNX12.0学习笔记index_img: &#x2F;pic&#x2F;UG.jpgdate: 2023-07-20 11:46:27tags: 学习"></a>title: UGNX12.0学习笔记<br>index_img: &#x2F;pic&#x2F;UG.jpg<br>date: 2023-07-20 11:46:27<br>tags: 学习</h2><h1 id="UG-NX12-0学习笔记（2023-7-20-8-13）-作者：袁昊"><a href="#UG-NX12-0学习笔记（2023-7-20-8-13）-作者：袁昊" class="headerlink" title="UG NX12.0学习笔记（2023.7.20-8.13） 作者：袁昊"></a>UG NX12.0学习笔记（2023.7.20-8.13） 作者：袁昊</h1><h3 id="本文前言"><a href="#本文前言" class="headerlink" title="本文前言"></a>本文前言</h3><ul>
 <li>本笔记记录了耗子在2023年7月20日-2023年8月13日的UGNX12.0学习及其按照学习通老师所讲的内容所制成的目录，其中包含很多作者在学习过程中自行整理的内容和自己的见解，快捷指令和内容理解，本文共计耗时25天，写入字数1.5万字，插入图片若干，此文由Markdown语言编写，所以插入图片略微复杂，尽请见谅，如有错误请联系作者改正</li>
 </ul>
 <h2 id="操作指南及其快捷键"><a href="#操作指南及其快捷键" class="headerlink" title="操作指南及其快捷键"></a>操作指南及其快捷键</h2><ul>
@@ -323,7 +12,7 @@
 <li>TAB键切换操作目标</li>
 <li>F4执行上一个命令</li>
 </ul>
-<h2 id="1-1-项目1：入门（第一单元：UG入门-1-1-1-2-4）"><a href="#1-1-项目1：入门（第一单元：UG入门-1-1-1-2-4）" class="headerlink" title="1.1 项目1：入门（第一单元：UG入门 1.1-1.2.4）"></a>1.1 项目1：入门（第一单元：UG入门 1.1-1.2.4）</h2><p><img src="/pic/1.png" srcset="/img/loading.gif" lazyload alt="UG界面"></p>
+<h2 id="1-1-项目1：入门（第一单元：UG入门-1-1-1-2-4）"><a href="#1-1-项目1：入门（第一单元：UG入门-1-1-1-2-4）" class="headerlink" title="1.1 项目1：入门（第一单元：UG入门 1.1-1.2.4）"></a>1.1 项目1：入门（第一单元：UG入门 1.1-1.2.4）</h2><p><img src="/pic/1.png" alt="UG界面"></p>
 <h3 id="UG界面介绍"><a href="#UG界面介绍" class="headerlink" title="UG界面介绍"></a>UG界面介绍</h3><ul>
 <li>标题栏</li>
 <li>菜单栏</li>
@@ -345,7 +34,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/3.png" srcset="/img/loading.gif" lazyload alt="创建长方体"></p>
+<p><img src="/pic/3.png" alt="创建长方体"></p>
 <h3 id="阵列特征"><a href="#阵列特征" class="headerlink" title="阵列特征"></a>阵列特征</h3><ul>
 <li>阵列特征<ul>
 <li>选择特征<ul>
@@ -358,7 +47,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/2.png" srcset="/img/loading.gif" lazyload alt="阵列特征"></p>
+<p><img src="/pic/2.png" alt="阵列特征"></p>
 <h3 id="对象移动"><a href="#对象移动" class="headerlink" title="对象移动"></a>对象移动</h3><ul>
 <li>菜单-编辑-对象移动<ul>
 <li>选择特征<ul>
@@ -394,8 +83,8 @@
 <li>显示地板栅格</li>
 <li>场景灯光</li>
 </ul>
-<p><img src="/pic/5.png" srcset="/img/loading.gif" lazyload alt="界面下"></p>
-<h3 id="测量距离"><a href="#测量距离" class="headerlink" title="测量距离"></a>测量距离</h3><p><img src="/pic/4.png" srcset="/img/loading.gif" lazyload alt="测量距离"></p>
+<p><img src="/pic/5.png" alt="界面下"></p>
+<h3 id="测量距离"><a href="#测量距离" class="headerlink" title="测量距离"></a>测量距离</h3><p><img src="/pic/4.png" alt="测量距离"></p>
 <h3 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h3><ul>
 <li>HOME键 正三轴测图</li>
 <li>END键 正等测图（正常用此视图）</li>
@@ -406,7 +95,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/6.png" srcset="/img/loading.gif" lazyload alt="圆柱"></p>
+<p><img src="/pic/6.png" alt="圆柱"></p>
 <h3 id="移动对象"><a href="#移动对象" class="headerlink" title="移动对象"></a>移动对象</h3><ul>
 <li>菜单-编辑-移动对象</li>
 <li>快捷键 ctrl+T<ul>
@@ -427,22 +116,22 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/move.png" srcset="/img/loading.gif" lazyload alt="移动对象"><img src="/pic/movek.png" srcset="/img/loading.gif" lazyload alt="移动对象对话框"></p>
+<p><img src="/pic/move.png" alt="移动对象"><img src="/pic/movek.png" alt="移动对象对话框"></p>
 <hr>
-<h2 id="1-2-1-2-1基础体–案例1-基本体建模（1-2-1-1-2-4）"><a href="#1-2-1-2-1基础体–案例1-基本体建模（1-2-1-1-2-4）" class="headerlink" title="1.2.1 2-1基础体–案例1 [基本体建模（1.2.1-1.2.4）]"></a>1.2.1 2-1基础体–案例1 [基本体建模（1.2.1-1.2.4）]</h2><p><img src="/pic/jct.png" srcset="/img/loading.gif" lazyload alt="基础体"></p>
+<h2 id="1-2-1-2-1基础体–案例1-基本体建模（1-2-1-1-2-4）"><a href="#1-2-1-2-1基础体–案例1-基本体建模（1-2-1-1-2-4）" class="headerlink" title="1.2.1 2-1基础体–案例1 [基本体建模（1.2.1-1.2.4）]"></a>1.2.1 2-1基础体–案例1 [基本体建模（1.2.1-1.2.4）]</h2><p><img src="/pic/jct.png" alt="基础体"></p>
 <h3 id="运用长方体，阵列特征做出此图形"><a href="#运用长方体，阵列特征做出此图形" class="headerlink" title="运用长方体，阵列特征做出此图形"></a>运用长方体，阵列特征做出此图形</h3><ul>
 <li>首先做一个长方体（长宽高都为100），然后在左下角做一个小的长方体（长宽高都为20），然后布尔运算选择减去，然后将减去的这个块阵列特征，选择两个方向，x和y轴，数量3个，间隔是40，然后即可做出一个面，然后将此阵列特征和上次阵列的块，继续重复上次的命令，然后即可做出此图形</li>
 </ul>
-<h2 id="1-2-2-项目2-2：基本体2"><a href="#1-2-2-项目2-2：基本体2" class="headerlink" title="1.2.2 项目2-2：基本体2"></a>1.2.2 项目2-2：基本体2</h2><p><img src="/pic/jbt2.png" srcset="/img/loading.gif" lazyload alt="基本体2"></p>
+<h2 id="1-2-2-项目2-2：基本体2"><a href="#1-2-2-项目2-2：基本体2" class="headerlink" title="1.2.2 项目2-2：基本体2"></a>1.2.2 项目2-2：基本体2</h2><p><img src="/pic/jbt2.png" alt="基本体2"></p>
 <h3 id="运用圆柱，圆锥，布尔运算，基础平面，修剪体"><a href="#运用圆柱，圆锥，布尔运算，基础平面，修剪体" class="headerlink" title="运用圆柱，圆锥，布尔运算，基础平面，修剪体"></a>运用圆柱，圆锥，布尔运算，基础平面，修剪体</h3><ul>
 <li>首先做一个圆柱（直径100，高度50），矢量y轴，然后继续做圆柱(d 80 h 60 )，捕捉这个圆柱的圆心，矢量y轴，然后做圆锥（底部直径80，高度70）,捕捉圆柱圆心，布尔运算合并，然后点击基本平面，点击最左边的圆柱然后去一点一点碰，点击，然后弹出快速选取，点击xy平面，然后出现个平面 ，然后点击修剪体（或者菜单-插入-修剪-修剪体）然后选择体，然后选择平面为刚刚新建的平面，然后点击应用&#x2F;确定即可</li>
 </ul>
-<h3 id="真实着色"><a href="#真实着色" class="headerlink" title="真实着色"></a>真实着色</h3><p><img src="/pic/jbt2zs.png" srcset="/img/loading.gif" lazyload alt="基本体2真实着色"></p>
+<h3 id="真实着色"><a href="#真实着色" class="headerlink" title="真实着色"></a>真实着色</h3><p><img src="/pic/jbt2zs.png" alt="基本体2真实着色"></p>
 <ul>
 <li>将基础平面隐藏，然后直接点击视图中的真实着色</li>
 <li>如果只想将某一个面着色，就点击真实着色编辑器（或者直接对象着色也可以）的特定于对象的材料，对象着色然后点击那个面，然后着色成你所要的即可</li>
 </ul>
-<p><img src="/pic/zs.png" srcset="/img/loading.gif" lazyload alt="真实着色编辑器"></p>
+<p><img src="/pic/zs.png" alt="真实着色编辑器"></p>
 <ul>
 <li>扩展<ul>
 <li>真实着色模拟器<ul>
@@ -480,7 +169,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="1-2-3-项目2-3：基本体综合练习"><a href="#1-2-3-项目2-3：基本体综合练习" class="headerlink" title="1.2.3 项目2-3：基本体综合练习"></a>1.2.3 项目2-3：基本体综合练习</h2><h3 id="案例3"><a href="#案例3" class="headerlink" title="案例3"></a>案例3</h3><p><img src="/pic/cadpic.png" srcset="/img/loading.gif" lazyload alt="案例3 CAD"><img src="/pic/anli3.png" srcset="/img/loading.gif" lazyload alt="案例3 UG示例图"></p>
+<h2 id="1-2-3-项目2-3：基本体综合练习"><a href="#1-2-3-项目2-3：基本体综合练习" class="headerlink" title="1.2.3 项目2-3：基本体综合练习"></a>1.2.3 项目2-3：基本体综合练习</h2><h3 id="案例3"><a href="#案例3" class="headerlink" title="案例3"></a>案例3</h3><p><img src="/pic/cadpic.png" alt="案例3 CAD"><img src="/pic/anli3.png" alt="案例3 UG示例图"></p>
 <h3 id="画案例三的两个方法"><a href="#画案例三的两个方法" class="headerlink" title="画案例三的两个方法"></a>画案例三的两个方法</h3><ul>
 <li>方法一 长方体，圆柱，测量，移动对象<ul>
 <li>首先分析CAD图，下面的底长方体，菜单-插入-设计特征-长方体（输入长宽高为60,70,20）然后应用，然后画第二个竖着的长方体，指定点这里点进去点对话框，然后输入对应输入0,20,20，然后确定后输入尺寸（长宽高为60,30,50），然后即可，然后创建一个圆柱，同上设计特征然后圆柱，指定矢量为y轴，指定点上面的长方体的长边的中点，输入直径60，输入高度30，然后改布尔为合并，确定即可，然后创建最后一个圆柱将中间的孔打出来，直径为30（高度不知道就去测量），测量出高度为30，布尔选择减去，确定即可</li>
@@ -491,7 +180,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p><img src="/pic/home1.png" srcset="/img/loading.gif" lazyload alt="作业1.2.3"></p>
+<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><p><img src="/pic/home1.png" alt="作业1.2.3"></p>
 <h2 id="1-2-4-项目2-4：桌椅基本体（移动对象）"><a href="#1-2-4-项目2-4：桌椅基本体（移动对象）" class="headerlink" title="1.2.4 项目2-4：桌椅基本体（移动对象）"></a>1.2.4 项目2-4：桌椅基本体（移动对象）</h2><h3 id="抽壳"><a href="#抽壳" class="headerlink" title="抽壳"></a>抽壳</h3><ul>
 <li>菜单-插入-偏置&#x2F;缩放-抽壳<ul>
 <li>弹出对话框<ul>
@@ -598,7 +287,7 @@
 </li>
 </ul>
 <hr>
-<h2 id="2-1-项目3：草图入门-同心圆约束（第二单元：草图与实体建模-2-1-2-10）"><a href="#2-1-项目3：草图入门-同心圆约束（第二单元：草图与实体建模-2-1-2-10）" class="headerlink" title="2.1 项目3：草图入门-同心圆约束（第二单元：草图与实体建模 2.1-2.10）"></a>2.1 项目3：草图入门-同心圆约束（第二单元：草图与实体建模 2.1-2.10）</h2><p><img src="/pic/2.1.JPG" srcset="/img/loading.gif" lazyload alt="2.1 CAD"></p>
+<h2 id="2-1-项目3：草图入门-同心圆约束（第二单元：草图与实体建模-2-1-2-10）"><a href="#2-1-项目3：草图入门-同心圆约束（第二单元：草图与实体建模-2-1-2-10）" class="headerlink" title="2.1 项目3：草图入门-同心圆约束（第二单元：草图与实体建模 2.1-2.10）"></a>2.1 项目3：草图入门-同心圆约束（第二单元：草图与实体建模 2.1-2.10）</h2><p><img src="/pic/2.1.JPG" alt="2.1 CAD"></p>
 <h3 id="草图入门–自动判断约束"><a href="#草图入门–自动判断约束" class="headerlink" title="草图入门–自动判断约束"></a>草图入门–自动判断约束</h3><ul>
 <li>纯草图界面<ul>
 <li>在任务环境下绘制草图<ul>
@@ -608,7 +297,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/image-1.png" srcset="/img/loading.gif" lazyload alt="在任务环境下绘制草图"></p>
+<p><img src="/pic/image-1.png" alt="在任务环境下绘制草图"></p>
 <h3 id="快捷指令（在纯草图下–在任务环境下绘制草图）"><a href="#快捷指令（在纯草图下–在任务环境下绘制草图）" class="headerlink" title="快捷指令（在纯草图下–在任务环境下绘制草图）"></a>快捷指令（在纯草图下–在任务环境下绘制草图）</h3><ul>
 <li>L 直线</li>
 <li>A 圆弧</li>
@@ -672,8 +361,8 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/image.png" srcset="/img/loading.gif" lazyload alt="几何约束"></p>
-<h2 id="2-2-项目4：草图1-拉伸—圆"><a href="#2-2-项目4：草图1-拉伸—圆" class="headerlink" title="2.2 项目4：草图1-拉伸—圆"></a>2.2 项目4：草图1-拉伸—圆</h2><p><img src="/pic/anli4cad.jpg" srcset="/img/loading.gif" lazyload alt="项目4 CAD图"><br><img src="/pic/anli4ug.png" srcset="/img/loading.gif" lazyload alt="项目4 UG示例图"></p>
+<p><img src="/pic/image.png" alt="几何约束"></p>
+<h2 id="2-2-项目4：草图1-拉伸—圆"><a href="#2-2-项目4：草图1-拉伸—圆" class="headerlink" title="2.2 项目4：草图1-拉伸—圆"></a>2.2 项目4：草图1-拉伸—圆</h2><p><img src="/pic/anli4cad.jpg" alt="项目4 CAD图"><br><img src="/pic/anli4ug.png" alt="项目4 UG示例图"></p>
 <h3 id="总结老师所讲"><a href="#总结老师所讲" class="headerlink" title="总结老师所讲"></a>总结老师所讲</h3><ul>
 <li>如果不小心删掉了坐标系，点击基础平面的小三角，点击基准坐标系随便选个点即可</li>
 <li>每个区域右键出现的东西不同</li>
@@ -723,24 +412,24 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/ty.png" srcset="/img/loading.gif" lazyload alt="投影距离"></p>
-<h2 id="2-2-1-项目4-1-草图1-拉伸-拓展"><a href="#2-2-1-项目4-1-草图1-拉伸-拓展" class="headerlink" title="2.2.1 项目4.1 草图1-拉伸-拓展"></a>2.2.1 项目4.1 草图1-拉伸-拓展</h2><h3 id="在任务环境中绘制草图的工具的打开"><a href="#在任务环境中绘制草图的工具的打开" class="headerlink" title="在任务环境中绘制草图的工具的打开"></a>在任务环境中绘制草图的工具的打开</h3><p><img src="/pic/rw.png" srcset="/img/loading.gif" lazyload alt="在任务环境中绘制草图"></p>
+<p><img src="/pic/ty.png" alt="投影距离"></p>
+<h2 id="2-2-1-项目4-1-草图1-拉伸-拓展"><a href="#2-2-1-项目4-1-草图1-拉伸-拓展" class="headerlink" title="2.2.1 项目4.1 草图1-拉伸-拓展"></a>2.2.1 项目4.1 草图1-拉伸-拓展</h2><h3 id="在任务环境中绘制草图的工具的打开"><a href="#在任务环境中绘制草图的工具的打开" class="headerlink" title="在任务环境中绘制草图的工具的打开"></a>在任务环境中绘制草图的工具的打开</h3><p><img src="/pic/rw.png" alt="在任务环境中绘制草图"></p>
 <ul>
 <li>右键菜单栏，点击定制，然后找到，插入，草图，然后右边找到 在任务环境中绘制草图，然后使用</li>
 </ul>
-<p><img src="/pic/rw2.png" srcset="/img/loading.gif" lazyload alt="在任务环境中绘制草图 使用工作部件原点"></p>
+<p><img src="/pic/rw2.png" alt="在任务环境中绘制草图 使用工作部件原点"></p>
 <ul>
 <li>在任务环境中绘制草图 使用工作部件原点 然后点击之前建的图的上表面，然后确定即可从这个面上开始绘制草图</li>
 </ul>
-<p><img src="/pic/xyz.png" srcset="/img/loading.gif" lazyload alt="选择基准坐标系XYZ轴"></p>
+<p><img src="/pic/xyz.png" alt="选择基准坐标系XYZ轴"></p>
 <ul>
 <li>选择坐标系时候如果不与你的坐标系相同时点坐标系对话框进入选择xyz轴</li>
 <li>然后进入草图页面（记住要把连续自动草图尺寸标注关闭）</li>
 </ul>
-<h3 id="偏置曲线"><a href="#偏置曲线" class="headerlink" title="偏置曲线"></a>偏置曲线</h3><p><img src="/pic/pzqx.png" srcset="/img/loading.gif" lazyload alt="偏置曲线"></p>
-<p><img src="/pic/pzqx1.png" srcset="/img/loading.gif" lazyload alt="偏置曲线重要点"></p>
-<p><img src="/pic/z1.png" srcset="/img/loading.gif" lazyload alt="图中制作拐角和快速修剪均可达到这种效果"></p>
-<h3 id="移动面-替换面"><a href="#移动面-替换面" class="headerlink" title="移动面 替换面"></a>移动面 替换面</h3><p><img src="/pic/move.png" srcset="/img/loading.gif" lazyload alt="移动面，替换面图标"></p>
+<h3 id="偏置曲线"><a href="#偏置曲线" class="headerlink" title="偏置曲线"></a>偏置曲线</h3><p><img src="/pic/pzqx.png" alt="偏置曲线"></p>
+<p><img src="/pic/pzqx1.png" alt="偏置曲线重要点"></p>
+<p><img src="/pic/z1.png" alt="图中制作拐角和快速修剪均可达到这种效果"></p>
+<h3 id="移动面-替换面"><a href="#移动面-替换面" class="headerlink" title="移动面 替换面"></a>移动面 替换面</h3><p><img src="/pic/move.png" alt="移动面，替换面图标"></p>
 <h3 id="倾斜角-倒圆角（边倒圆）"><a href="#倾斜角-倒圆角（边倒圆）" class="headerlink" title="倾斜角 倒圆角（边倒圆）"></a>倾斜角 倒圆角（边倒圆）</h3><ul>
 <li>特征下</li>
 </ul>
@@ -789,8 +478,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="2-2-2-实战实例图"><a href="#2-2-2-实战实例图" class="headerlink" title="2.2.2 实战实例图"></a>2.2.2 实战实例图</h2><p><img src="/pic/2.2.2cao.png" srcset="/img/loading.gif" lazyload alt="2.2.2 UG草图"><img src="/pic/2.2.2.png" srcset="/img/loading.gif" lazyload alt="2.2.2 UG"></p>
-<h2 id="2-3-项目5：草图2—拉伸—矩形和椭圆"><a href="#2-3-项目5：草图2—拉伸—矩形和椭圆" class="headerlink" title="2.3 项目5：草图2—拉伸—矩形和椭圆"></a>2.3 项目5：草图2—拉伸—矩形和椭圆</h2><p><img src="/pic/2.3.jpg" srcset="/img/loading.gif" lazyload alt="2.3课上图"></p>
+<h2 id="2-2-2-实战实例图"><a href="#2-2-2-实战实例图" class="headerlink" title="2.2.2 实战实例图"></a>2.2.2 实战实例图</h2><p><img src="/pic/2.2.2cao.png" alt="2.2.2 UG草图"><img src="/pic/2.2.2.png" alt="2.2.2 UG"></p>
+<h2 id="2-3-项目5：草图2—拉伸—矩形和椭圆"><a href="#2-3-项目5：草图2—拉伸—矩形和椭圆" class="headerlink" title="2.3 项目5：草图2—拉伸—矩形和椭圆"></a>2.3 项目5：草图2—拉伸—矩形和椭圆</h2><p><img src="/pic/2.3.jpg" alt="2.3课上图"></p>
 <ul>
 <li>作此图时注意<ul>
 <li>设为对称</li>
@@ -798,7 +487,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="2-4-项目6：草图3-旋转——手柄"><a href="#2-4-项目6：草图3-旋转——手柄" class="headerlink" title="2.4 项目6：草图3-旋转——手柄"></a>2.4 项目6：草图3-旋转——手柄</h2><p><img src="/pic/2.4CAD.jpg" srcset="/img/loading.gif" lazyload alt="2.4CAD"><img src="/pic/2.4UG.png" srcset="/img/loading.gif" lazyload alt="2.4UG"></p>
+<h2 id="2-4-项目6：草图3-旋转——手柄"><a href="#2-4-项目6：草图3-旋转——手柄" class="headerlink" title="2.4 项目6：草图3-旋转——手柄"></a>2.4 项目6：草图3-旋转——手柄</h2><p><img src="/pic/2.4CAD.jpg" alt="2.4CAD"><img src="/pic/2.4UG.png" alt="2.4UG"></p>
 <h3 id="草图-轮廓线-1"><a href="#草图-轮廓线-1" class="headerlink" title="草图-轮廓线"></a>草图-轮廓线</h3><ul>
 <li>画轮廓线时长按左键切换为圆弧，再次长按即直线</li>
 <li>最好不要捕捉到任何约束</li>
@@ -855,7 +544,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="2-4-1-项目6-1：哑铃—旋转体"><a href="#2-4-1-项目6-1：哑铃—旋转体" class="headerlink" title="2.4.1 项目6-1：哑铃—旋转体"></a>2.4.1 项目6-1：哑铃—旋转体</h2><h3 id="哑铃旋转体-练习"><a href="#哑铃旋转体-练习" class="headerlink" title="哑铃旋转体-练习"></a>哑铃旋转体-练习</h3><p><img src="/pic/yl.jpg" srcset="/img/loading.gif" lazyload alt="yl"></p>
+<h2 id="2-4-1-项目6-1：哑铃—旋转体"><a href="#2-4-1-项目6-1：哑铃—旋转体" class="headerlink" title="2.4.1 项目6-1：哑铃—旋转体"></a>2.4.1 项目6-1：哑铃—旋转体</h2><h3 id="哑铃旋转体-练习"><a href="#哑铃旋转体-练习" class="headerlink" title="哑铃旋转体-练习"></a>哑铃旋转体-练习</h3><p><img src="/pic/yl.jpg" alt="yl"></p>
 <h3 id="显示和隐藏（快捷键ctrl-W）"><a href="#显示和隐藏（快捷键ctrl-W）" class="headerlink" title="显示和隐藏（快捷键ctrl+W）"></a>显示和隐藏（快捷键ctrl+W）</h3><ul>
 <li>类型<ul>
 <li>全部</li>
@@ -877,11 +566,11 @@
 </li>
 <li>显示和隐藏（+ with -）</li>
 </ul>
-<h2 id="2-5-项目7：草图4—草图综合应用——拉伸、旋转"><a href="#2-5-项目7：草图4—草图综合应用——拉伸、旋转" class="headerlink" title="2.5 项目7：草图4—草图综合应用——拉伸、旋转"></a>2.5 项目7：草图4—草图综合应用——拉伸、旋转</h2><p><img src="/pic/2.5CAD.png" srcset="/img/loading.gif" lazyload alt="2.5CAD"><img src="/pic/2.5UG.png" srcset="/img/loading.gif" lazyload alt="2.5UG"></p>
+<h2 id="2-5-项目7：草图4—草图综合应用——拉伸、旋转"><a href="#2-5-项目7：草图4—草图综合应用——拉伸、旋转" class="headerlink" title="2.5 项目7：草图4—草图综合应用——拉伸、旋转"></a>2.5 项目7：草图4—草图综合应用——拉伸、旋转</h2><p><img src="/pic/2.5CAD.png" alt="2.5CAD"><img src="/pic/2.5UG.png" alt="2.5UG"></p>
 <h3 id="草图-投影曲线"><a href="#草图-投影曲线" class="headerlink" title="草图-投影曲线"></a>草图-投影曲线</h3><ul>
 <li>草图，选择你要投影到的面，然后选择曲线，点击投影曲线，确定即可</li>
 </ul>
-<h2 id="2-6-项目8：草图5-管道沿引导线扫略"><a href="#2-6-项目8：草图5-管道沿引导线扫略" class="headerlink" title="2.6 项目8：草图5-管道沿引导线扫略"></a>2.6 项目8：草图5-管道沿引导线扫略</h2><p><img src="/pic/2.6UG.png" srcset="/img/loading.gif" lazyload alt="2.6UG"><img src="/pic/2.6UG2.png" srcset="/img/loading.gif" lazyload alt="2.6UG2"></p>
+<h2 id="2-6-项目8：草图5-管道沿引导线扫略"><a href="#2-6-项目8：草图5-管道沿引导线扫略" class="headerlink" title="2.6 项目8：草图5-管道沿引导线扫略"></a>2.6 项目8：草图5-管道沿引导线扫略</h2><p><img src="/pic/2.6UG.png" alt="2.6UG"><img src="/pic/2.6UG2.png" alt="2.6UG2"></p>
 <h3 id="移动面-偏置"><a href="#移动面-偏置" class="headerlink" title="移动面 偏置"></a>移动面 偏置</h3><ul>
 <li>点击面，然后偏置</li>
 </ul>
@@ -909,7 +598,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="阵列几何特征"><a href="#阵列几何特征" class="headerlink" title="阵列几何特征"></a>阵列几何特征</h3><p><img src="/pic/zljhtz.png" srcset="/img/loading.gif" lazyload alt="阵列几何特征"></p>
+<h3 id="阵列几何特征"><a href="#阵列几何特征" class="headerlink" title="阵列几何特征"></a>阵列几何特征</h3><p><img src="/pic/zljhtz.png" alt="阵列几何特征"></p>
 <ul>
 <li>要在几何状态下阵列，就是不是合并的一个体</li>
 </ul>
@@ -987,7 +676,7 @@
 </li>
 <li>特殊案例（此图中间的做法）</li>
 </ul>
-<p><img src="/pic/2.6sl.png" srcset="/img/loading.gif" lazyload alt="2.6sl"></p>
+<p><img src="/pic/2.6sl.png" alt="2.6sl"></p>
 <ul>
 <li>先画两个这样的草图，然后扫掠<ul>
 <li>如果扫掠除了错误—引出对齐-根据点</li>
@@ -1036,7 +725,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="2-6-1-项目8-1：扫略拓展案例"><a href="#2-6-1-项目8-1：扫略拓展案例" class="headerlink" title="2.6.1 项目8.1：扫略拓展案例"></a>2.6.1 项目8.1：扫略拓展案例</h2><p><img src="/pic/2.6.1.jpg" srcset="/img/loading.gif" lazyload alt="2.6.1"></p>
+<h2 id="2-6-1-项目8-1：扫略拓展案例"><a href="#2-6-1-项目8-1：扫略拓展案例" class="headerlink" title="2.6.1 项目8.1：扫略拓展案例"></a>2.6.1 项目8.1：扫略拓展案例</h2><p><img src="/pic/2.6.1.jpg" alt="2.6.1"></p>
 <ul>
 <li>注：本图有未标注的尺寸</li>
 </ul>
@@ -1122,7 +811,7 @@
 <h3 id="倾斜的平面做点"><a href="#倾斜的平面做点" class="headerlink" title="倾斜的平面做点"></a>倾斜的平面做点</h3><ul>
 <li>沿矢量做点，然后选择倾斜的角度线（？）</li>
 </ul>
-<h2 id="2-7-项目9：草图6-扫掠"><a href="#2-7-项目9：草图6-扫掠" class="headerlink" title="2.7 项目9：草图6-扫掠"></a>2.7 项目9：草图6-扫掠</h2><p><img src="/pic/2.7CAD.jpg" srcset="/img/loading.gif" lazyload alt="2.7CAD"><img src="/pic/2.7UG.png" srcset="/img/loading.gif" lazyload alt="2.7UG"></p>
+<h2 id="2-7-项目9：草图6-扫掠"><a href="#2-7-项目9：草图6-扫掠" class="headerlink" title="2.7 项目9：草图6-扫掠"></a>2.7 项目9：草图6-扫掠</h2><p><img src="/pic/2.7CAD.jpg" alt="2.7CAD"><img src="/pic/2.7UG.png" alt="2.7UG"></p>
 <h3 id="两种方法做出此物件"><a href="#两种方法做出此物件" class="headerlink" title="两种方法做出此物件"></a>两种方法做出此物件</h3><ul>
 <li>方法1–曲线组法<ul>
 <li>先画草图（打断重画目的改起点的位置）</li>
@@ -1143,7 +832,7 @@
 <li>三次 三次方曲线连接</li>
 <li>混合 混合方法连接</li>
 </ul>
-<h2 id="2-8-项目10：草图7—曲线网格、变化扫掠"><a href="#2-8-项目10：草图7—曲线网格、变化扫掠" class="headerlink" title="2.8 项目10：草图7—曲线网格、变化扫掠"></a>2.8 项目10：草图7—曲线网格、变化扫掠</h2><p><img src="/pic/2.8.jpg" srcset="/img/loading.gif" lazyload alt="2.8"></p>
+<h2 id="2-8-项目10：草图7—曲线网格、变化扫掠"><a href="#2-8-项目10：草图7—曲线网格、变化扫掠" class="headerlink" title="2.8 项目10：草图7—曲线网格、变化扫掠"></a>2.8 项目10：草图7—曲线网格、变化扫掠</h2><p><img src="/pic/2.8.jpg" alt="2.8"></p>
 <ul>
 <li>本图运用机械制图 主视图 左视图 俯视图</li>
 <li>本图运用两种方法做出<ul>
@@ -1175,7 +864,7 @@
 <li><strong>变化扫掠必须求交点</strong>，所以点交点，每个曲线和平面有一个交点</li>
 <li>椭圆和x轴平行，如果碰不到x轴，就去<strong>过滤器选择尽在工作部件内</strong></li>
 </ul>
-<h2 id="2-9-项目11：草图8-扫掠（缩放-周长、面积）"><a href="#2-9-项目11：草图8-扫掠（缩放-周长、面积）" class="headerlink" title="2.9 项目11：草图8-扫掠（缩放-周长、面积）"></a>2.9 项目11：草图8-扫掠（缩放-周长、面积）</h2><p><img src="/pic/2.91.png" srcset="/img/loading.gif" lazyload alt="2.91"><img src="/pic/2.92.jpg" srcset="/img/loading.gif" lazyload alt="2.92"><img src="/pic/2.93.png" srcset="/img/loading.gif" lazyload alt="2.93"><img src="/pic/2.94.jpg" srcset="/img/loading.gif" lazyload alt="2.94"><img src="/pic/2.9UG.png" srcset="/img/loading.gif" lazyload alt="2.9UG"></p>
+<h2 id="2-9-项目11：草图8-扫掠（缩放-周长、面积）"><a href="#2-9-项目11：草图8-扫掠（缩放-周长、面积）" class="headerlink" title="2.9 项目11：草图8-扫掠（缩放-周长、面积）"></a>2.9 项目11：草图8-扫掠（缩放-周长、面积）</h2><p><img src="/pic/2.91.png" alt="2.91"><img src="/pic/2.92.jpg" alt="2.92"><img src="/pic/2.93.png" alt="2.93"><img src="/pic/2.94.jpg" alt="2.94"><img src="/pic/2.9UG.png" alt="2.9UG"></p>
 <h3 id="移动对象–用于阵列特征"><a href="#移动对象–用于阵列特征" class="headerlink" title="移动对象–用于阵列特征"></a>移动对象–用于阵列特征</h3><ul>
 <li>菜单-编辑-移动对象</li>
 <li>ctrl+T快捷键</li>
@@ -1208,11 +897,11 @@
 </ul>
 </li>
 </ul>
-<h2 id="2-10-附加案例1：拉伸到面"><a href="#2-10-附加案例1：拉伸到面" class="headerlink" title="2.10 附加案例1：拉伸到面"></a>2.10 附加案例1：拉伸到面</h2><p><img src="/pic/2.10.jpg" srcset="/img/loading.gif" lazyload alt="2.10"><img src="/pic/2.10UG.png" srcset="/img/loading.gif" lazyload alt="2.10UG"></p>
+<h2 id="2-10-附加案例1：拉伸到面"><a href="#2-10-附加案例1：拉伸到面" class="headerlink" title="2.10 附加案例1：拉伸到面"></a>2.10 附加案例1：拉伸到面</h2><p><img src="/pic/2.10.jpg" alt="2.10"><img src="/pic/2.10UG.png" alt="2.10UG"></p>
 <ul>
 <li>这种图的作图思路是底面和体的求差</li>
 </ul>
-<h2 id="3-1-项目12：案例1——抽壳、筋板、拔模"><a href="#3-1-项目12：案例1——抽壳、筋板、拔模" class="headerlink" title="3.1 项目12：案例1——抽壳、筋板、拔模"></a>3.1 项目12：案例1——抽壳、筋板、拔模</h2><p><img src="/pic/3.1.jpg" srcset="/img/loading.gif" lazyload alt="3.1"><img src="/pic/3.11.png" srcset="/img/loading.gif" lazyload alt="3.11"><img src="/pic/3.12.png" srcset="/img/loading.gif" lazyload alt="3.12"></p>
+<h2 id="3-1-项目12：案例1——抽壳、筋板、拔模"><a href="#3-1-项目12：案例1——抽壳、筋板、拔模" class="headerlink" title="3.1 项目12：案例1——抽壳、筋板、拔模"></a>3.1 项目12：案例1——抽壳、筋板、拔模</h2><p><img src="/pic/3.1.jpg" alt="3.1"><img src="/pic/3.11.png" alt="3.11"><img src="/pic/3.12.png" alt="3.12"></p>
 <h3 id="做此图的思路步骤"><a href="#做此图的思路步骤" class="headerlink" title="做此图的思路步骤"></a>做此图的思路步骤</h3><ol>
 <li>先做长方体，然后做两条曲线，扫掠，然后修剪体</li>
 <li>然后拔模</li>
@@ -1301,7 +990,7 @@
 <h3 id="部件导航器的部件顺序"><a href="#部件导航器的部件顺序" class="headerlink" title="部件导航器的部件顺序"></a>部件导航器的部件顺序</h3><ul>
 <li>用鼠标左键点击往上拖即可改变顺序（用于可回滚编辑中使用）</li>
 </ul>
-<h2 id="3-2-项目13：案例2——腔体、垫块、凸台"><a href="#3-2-项目13：案例2——腔体、垫块、凸台" class="headerlink" title="3.2 项目13：案例2——腔体、垫块、凸台"></a>3.2 项目13：案例2——腔体、垫块、凸台</h2><p><img src="/pic/3.2.png" srcset="/img/loading.gif" lazyload alt="3.2"><img src="/pic/3.2UG.jpg" srcset="/img/loading.gif" lazyload alt="3.2ug"></p>
+<h2 id="3-2-项目13：案例2——腔体、垫块、凸台"><a href="#3-2-项目13：案例2——腔体、垫块、凸台" class="headerlink" title="3.2 项目13：案例2——腔体、垫块、凸台"></a>3.2 项目13：案例2——腔体、垫块、凸台</h2><p><img src="/pic/3.2.png" alt="3.2"><img src="/pic/3.2UG.jpg" alt="3.2ug"></p>
 <h3 id="腔体绘制长方体"><a href="#腔体绘制长方体" class="headerlink" title="腔体绘制长方体"></a>腔体绘制长方体</h3><h3 id="腔体绘制长方体-1"><a href="#腔体绘制长方体-1" class="headerlink" title="腔体绘制长方体"></a>腔体绘制长方体</h3><ul>
 <li>ctrl+1打开定制<ul>
 <li>找到菜单-插入-设计特征-腔体<ul>
@@ -1367,7 +1056,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="3-3-项目14：-案例3——轴、键槽、沟槽、螺纹"><a href="#3-3-项目14：-案例3——轴、键槽、沟槽、螺纹" class="headerlink" title="3.3 项目14：-案例3——轴、键槽、沟槽、螺纹"></a>3.3 项目14：-案例3——轴、键槽、沟槽、螺纹</h2><p><img src="/pic/3.3.png" srcset="/img/loading.gif" lazyload alt="3.3"></p>
+<h2 id="3-3-项目14：-案例3——轴、键槽、沟槽、螺纹"><a href="#3-3-项目14：-案例3——轴、键槽、沟槽、螺纹" class="headerlink" title="3.3 项目14：-案例3——轴、键槽、沟槽、螺纹"></a>3.3 项目14：-案例3——轴、键槽、沟槽、螺纹</h2><p><img src="/pic/3.3.png" alt="3.3"></p>
 <h3 id="键槽"><a href="#键槽" class="headerlink" title="键槽"></a>键槽</h3><ul>
 <li>ctrl+1打开定制<ul>
 <li>找到菜单-插入-设计特征-键槽<ul>
@@ -1472,7 +1161,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="3-4-项目15：案例4—弹簧"><a href="#3-4-项目15：案例4—弹簧" class="headerlink" title="3.4 项目15：案例4—弹簧"></a>3.4 项目15：案例4—弹簧</h2><p><img src="/pic/3.41.png" srcset="/img/loading.gif" lazyload alt="3.41"><img src="/pic/3.42.png" srcset="/img/loading.gif" lazyload alt="3.42"><img src="/pic/3.43.png" srcset="/img/loading.gif" lazyload alt="3.43"><img src="/pic/3.44.png" srcset="/img/loading.gif" lazyload alt="3.44"><img src="/pic/3.45.png" srcset="/img/loading.gif" lazyload alt="3.45"><img src="/pic/3.46.png" srcset="/img/loading.gif" lazyload alt="3.46"><img src="/pic/3.47.png" srcset="/img/loading.gif" lazyload alt="3.47"></p>
+<h2 id="3-4-项目15：案例4—弹簧"><a href="#3-4-项目15：案例4—弹簧" class="headerlink" title="3.4 项目15：案例4—弹簧"></a>3.4 项目15：案例4—弹簧</h2><p><img src="/pic/3.41.png" alt="3.41"><img src="/pic/3.42.png" alt="3.42"><img src="/pic/3.43.png" alt="3.43"><img src="/pic/3.44.png" alt="3.44"><img src="/pic/3.45.png" alt="3.45"><img src="/pic/3.46.png" alt="3.46"><img src="/pic/3.47.png" alt="3.47"></p>
 <h3 id="弹簧（螺旋-管-x2F-扫掠）"><a href="#弹簧（螺旋-管-x2F-扫掠）" class="headerlink" title="弹簧（螺旋+管&#x2F;扫掠）"></a>弹簧（螺旋+管&#x2F;扫掠）</h3><ul>
 <li>菜单-插入-曲线-螺旋法（要做单段管才是弹簧）<ul>
 <li>沿矢量<ul>
@@ -1576,8 +1265,8 @@
 <h2 id="4-1-项目16：曲面1—曲线组、有限平面、缝合（4-1-4-11-第四单元：曲面建模）"><a href="#4-1-项目16：曲面1—曲线组、有限平面、缝合（4-1-4-11-第四单元：曲面建模）" class="headerlink" title="4.1 项目16：曲面1—曲线组、有限平面、缝合（4.1-4.11 第四单元：曲面建模）"></a>4.1 项目16：曲面1—曲线组、有限平面、缝合（4.1-4.11 第四单元：曲面建模）</h2><h3 id="曲线组-有界屏幕-缝合"><a href="#曲线组-有界屏幕-缝合" class="headerlink" title="曲线组-有界屏幕-缝合"></a>曲线组-有界屏幕-缝合</h3><ul>
 <li>做此图</li>
 </ul>
-<p><img src="/pic/4.1.png" srcset="/img/loading.gif" lazyload alt="4.1"></p>
-<h2 id="4-1-1-项目16-1：曲面入门介绍"><a href="#4-1-1-项目16-1：曲面入门介绍" class="headerlink" title="4.1.1 项目16-1：曲面入门介绍"></a>4.1.1 项目16-1：曲面入门介绍</h2><p><img src="/pic/4.1.1.png" srcset="/img/loading.gif" lazyload alt="4.1.1"></p>
+<p><img src="/pic/4.1.png" alt="4.1"></p>
+<h2 id="4-1-1-项目16-1：曲面入门介绍"><a href="#4-1-1-项目16-1：曲面入门介绍" class="headerlink" title="4.1.1 项目16-1：曲面入门介绍"></a>4.1.1 项目16-1：曲面入门介绍</h2><p><img src="/pic/4.1.1.png" alt="4.1.1"></p>
 <h3 id="常用曲面"><a href="#常用曲面" class="headerlink" title="常用曲面"></a>常用曲面</h3><ul>
 <li>曲面<ul>
 <li>有界平面</li>
@@ -1602,7 +1291,7 @@
 <h3 id="相交曲线"><a href="#相交曲线" class="headerlink" title="相交曲线"></a>相交曲线</h3><ul>
 <li>曲线下相交曲线，选面，选第二个面，然后自动出现相交曲线</li>
 </ul>
-<h2 id="4-2-项目17：曲面2—求交（实体和片头之间转换技巧）"><a href="#4-2-项目17：曲面2—求交（实体和片头之间转换技巧）" class="headerlink" title="4.2 项目17：曲面2—求交（实体和片头之间转换技巧）"></a>4.2 项目17：曲面2—求交（实体和片头之间转换技巧）</h2><p><img src="/pic/4.2UG.png" srcset="/img/loading.gif" lazyload alt="4.2ug"><br><img src="/pic/4.2.jpg" srcset="/img/loading.gif" lazyload alt="4.2"></p>
+<h2 id="4-2-项目17：曲面2—求交（实体和片头之间转换技巧）"><a href="#4-2-项目17：曲面2—求交（实体和片头之间转换技巧）" class="headerlink" title="4.2 项目17：曲面2—求交（实体和片头之间转换技巧）"></a>4.2 项目17：曲面2—求交（实体和片头之间转换技巧）</h2><p><img src="/pic/4.2UG.png" alt="4.2ug"><br><img src="/pic/4.2.jpg" alt="4.2"></p>
 <h3 id="做出此图中的步骤"><a href="#做出此图中的步骤" class="headerlink" title="做出此图中的步骤"></a>做出此图中的步骤</h3><ul>
 <li>曲线-圆弧&#x2F;圆<ul>
 <li>这里要把限制整圆勾选，反之是圆弧</li>
@@ -1657,7 +1346,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-3-项目18：曲面3—弯管（相交曲线）"><a href="#4-3-项目18：曲面3—弯管（相交曲线）" class="headerlink" title="4.3 项目18：曲面3—弯管（相交曲线）"></a>4.3 项目18：曲面3—弯管（相交曲线）</h2><p><img src="/pic/4.3UG.png" srcset="/img/loading.gif" lazyload alt="4.3UG"><img src="/pic/4.3.jpg" srcset="/img/loading.gif" lazyload alt="4.3"></p>
+<h2 id="4-3-项目18：曲面3—弯管（相交曲线）"><a href="#4-3-项目18：曲面3—弯管（相交曲线）" class="headerlink" title="4.3 项目18：曲面3—弯管（相交曲线）"></a>4.3 项目18：曲面3—弯管（相交曲线）</h2><p><img src="/pic/4.3UG.png" alt="4.3UG"><img src="/pic/4.3.jpg" alt="4.3"></p>
 <h3 id="做此图的思路"><a href="#做此图的思路" class="headerlink" title="做此图的思路"></a>做此图的思路</h3><ul>
 <li>分析图纸，先做俯视（xc yc）图，然后主（zc xc）视图<ul>
 <li>然后（方法1）拉伸这两个的片体，最后进行相交命令求交，之后做管道即可</li>
@@ -1677,18 +1366,18 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-3-1-项目18-1：弯管的几种绘制方法"><a href="#4-3-1-项目18-1：弯管的几种绘制方法" class="headerlink" title="4.3.1 项目18-1：弯管的几种绘制方法"></a>4.3.1 项目18-1：弯管的几种绘制方法</h2><p><img src="/pic/4.3.1.png" srcset="/img/loading.gif" lazyload alt="4.3.1"><br><img src="/pic/4.3.1tuzhi.png" srcset="/img/loading.gif" lazyload alt="4.3.1tuzhi"></p>
+<h2 id="4-3-1-项目18-1：弯管的几种绘制方法"><a href="#4-3-1-项目18-1：弯管的几种绘制方法" class="headerlink" title="4.3.1 项目18-1：弯管的几种绘制方法"></a>4.3.1 项目18-1：弯管的几种绘制方法</h2><p><img src="/pic/4.3.1.png" alt="4.3.1"><br><img src="/pic/4.3.1tuzhi.png" alt="4.3.1tuzhi"></p>
 <h3 id="第一种方法（实体边线法）"><a href="#第一种方法（实体边线法）" class="headerlink" title="第一种方法（实体边线法）"></a>第一种方法（实体边线法）</h3><ul>
 <li>首先画草图，然后拉伸，边倒圆，最后做管</li>
 </ul>
 <h3 id="第二种方法（草图线和空间线法）"><a href="#第二种方法（草图线和空间线法）" class="headerlink" title="第二种方法（草图线和空间线法）"></a>第二种方法（草图线和空间线法）</h3><ul>
 <li>首先画草图，然后阵列曲线，然后使用空间线连接，然后做四个相切相切半径的圆弧用于图中的圆角部分，最后做管，选择单条曲线在相交处停止</li>
 </ul>
-<h2 id="4-3-2-项目18-2：曲别针"><a href="#4-3-2-项目18-2：曲别针" class="headerlink" title="4.3.2 项目18-2：曲别针"></a>4.3.2 项目18-2：曲别针</h2><p><img src="/pic/qbz.png" srcset="/img/loading.gif" lazyload alt="4.3.2"></p>
+<h2 id="4-3-2-项目18-2：曲别针"><a href="#4-3-2-项目18-2：曲别针" class="headerlink" title="4.3.2 项目18-2：曲别针"></a>4.3.2 项目18-2：曲别针</h2><p><img src="/pic/qbz.png" alt="4.3.2"></p>
 <h3 id="作此图步骤"><a href="#作此图步骤" class="headerlink" title="作此图步骤"></a>作此图步骤</h3><ul>
 <li>首先做俯视图，然后作空间线的直线，然后再做主视图的草图，，然后作组合投影，相交曲线，做管即可</li>
 </ul>
-<h3 id="4-4-项目19：曲面4-水壶（曲面网格、修剪片体）"><a href="#4-4-项目19：曲面4-水壶（曲面网格、修剪片体）" class="headerlink" title="4.4 项目19：曲面4-水壶（曲面网格、修剪片体）"></a>4.4 项目19：曲面4-水壶（曲面网格、修剪片体）</h3><p><img src="/pic/4.41.png" srcset="/img/loading.gif" lazyload alt="4.41"><br><img src="/pic/4.42.png" srcset="/img/loading.gif" lazyload alt="4.42"><br><img src="/pic/4.43.png" srcset="/img/loading.gif" lazyload alt="4.43"></p>
+<h3 id="4-4-项目19：曲面4-水壶（曲面网格、修剪片体）"><a href="#4-4-项目19：曲面4-水壶（曲面网格、修剪片体）" class="headerlink" title="4.4 项目19：曲面4-水壶（曲面网格、修剪片体）"></a>4.4 项目19：曲面4-水壶（曲面网格、修剪片体）</h3><p><img src="/pic/4.41.png" alt="4.41"><br><img src="/pic/4.42.png" alt="4.42"><br><img src="/pic/4.43.png" alt="4.43"></p>
 <h3 id="做此图步骤"><a href="#做此图步骤" class="headerlink" title="做此图步骤"></a>做此图步骤</h3><ul>
 <li>首先要做三个基准平面，然后在这三个基准平面和基准坐标系xy面做圆，然后在最顶上的草图圆旁边做一个茶壶的嘴，也就是一个相切圆+两个圆弧，然后通过网格曲面，选中第一条线和第二条线时会发现不是同一个起点，这时候就需要可回滚编辑到修剪之后把这里变成两个部分，然后进行通过网格曲面做面，然后做底，这时候发现这个底是凹陷进去的，这时候就要运用n边曲面，然后三角形，然后将中心位置的z轴往上调一点点就能达到图中的效果，然后水壶是一个实体，所以我们要将片体转换为实体，所以我们进行有界平面，将上面封起来，整个图形变成一个封闭图形，然后进行缝合命令将片体转换为实体，这个步骤要选定所有的片体才可将其转换为实体，然后在把的曲线上做一个圆的草图，然后进行扫掠，然后进行抽壳将瓶口打开</li>
 </ul>
@@ -1704,11 +1393,11 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-5-项目20：麻花圈（扫掠角度规律）"><a href="#4-5-项目20：麻花圈（扫掠角度规律）" class="headerlink" title="4.5 项目20：麻花圈（扫掠角度规律）"></a>4.5 项目20：麻花圈（扫掠角度规律）</h2><p><img src="/pic/4.51.jpg" srcset="/img/loading.gif" lazyload alt="4.51"><img src="/pic/4.52.png" srcset="/img/loading.gif" lazyload alt="4.52"><img src="/pic/4.53.png" srcset="/img/loading.gif" lazyload alt="4.53"></p>
+<h2 id="4-5-项目20：麻花圈（扫掠角度规律）"><a href="#4-5-项目20：麻花圈（扫掠角度规律）" class="headerlink" title="4.5 项目20：麻花圈（扫掠角度规律）"></a>4.5 项目20：麻花圈（扫掠角度规律）</h2><p><img src="/pic/4.51.jpg" alt="4.51"><img src="/pic/4.52.png" alt="4.52"><img src="/pic/4.53.png" alt="4.53"></p>
 <h3 id="本图作图思路"><a href="#本图作图思路" class="headerlink" title="本图作图思路"></a>本图作图思路</h3><ul>
 <li>先画草图，然后画扫掠的草图，然后扫掠调成角度规律，设置后直接确定即可</li>
 </ul>
-<h2 id="4-6-项目21：花边线（表达式、规律曲线）"><a href="#4-6-项目21：花边线（表达式、规律曲线）" class="headerlink" title="4.6 项目21：花边线（表达式、规律曲线）"></a>4.6 项目21：花边线（表达式、规律曲线）</h2><p><img src="/pic/4.6.png" srcset="/img/loading.gif" lazyload alt="4.6"></p>
+<h2 id="4-6-项目21：花边线（表达式、规律曲线）"><a href="#4-6-项目21：花边线（表达式、规律曲线）" class="headerlink" title="4.6 项目21：花边线（表达式、规律曲线）"></a>4.6 项目21：花边线（表达式、规律曲线）</h2><p><img src="/pic/4.6.png" alt="4.6"></p>
 <h3 id="本图作图思路-1"><a href="#本图作图思路-1" class="headerlink" title="本图作图思路"></a>本图作图思路</h3><ul>
 <li>工具-表达式<ul>
 <li>t 1 1 无单位</li>
@@ -1731,7 +1420,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-7-项目22：链环（桥接、空间线、曲线网格G1）"><a href="#4-7-项目22：链环（桥接、空间线、曲线网格G1）" class="headerlink" title="4.7 项目22：链环（桥接、空间线、曲线网格G1）"></a>4.7 项目22：链环（桥接、空间线、曲线网格G1）</h2><p><img src="/pic/4.7c.jpg" srcset="/img/loading.gif" lazyload alt="4.7c"><img src="/pic/4.7ug.png" srcset="/img/loading.gif" lazyload alt="4.7ug"></p>
+<h2 id="4-7-项目22：链环（桥接、空间线、曲线网格G1）"><a href="#4-7-项目22：链环（桥接、空间线、曲线网格G1）" class="headerlink" title="4.7 项目22：链环（桥接、空间线、曲线网格G1）"></a>4.7 项目22：链环（桥接、空间线、曲线网格G1）</h2><p><img src="/pic/4.7c.jpg" alt="4.7c"><img src="/pic/4.7ug.png" alt="4.7ug"></p>
 <h3 id="线的分割（分割曲线）"><a href="#线的分割（分割曲线）" class="headerlink" title="线的分割（分割曲线）"></a>线的分割（分割曲线）</h3><ul>
 <li>草图<ul>
 <li>草图下的线分割需要一条直线在分割的中间，然后修剪曲线将一条旁边的曲线减去，然后镜像曲线，然后将辅助线的直线删除即可</li>
@@ -1756,13 +1445,13 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-8-项目23：五角星弹簧"><a href="#4-8-项目23：五角星弹簧" class="headerlink" title="4.8 项目23：五角星弹簧"></a>4.8 项目23：五角星弹簧</h2><p><img src="/pic/4.8.png" srcset="/img/loading.gif" lazyload alt="4.8"></p>
+<h2 id="4-8-项目23：五角星弹簧"><a href="#4-8-项目23：五角星弹簧" class="headerlink" title="4.8 项目23：五角星弹簧"></a>4.8 项目23：五角星弹簧</h2><p><img src="/pic/4.8.png" alt="4.8"></p>
 <h3 id="做出本图的步骤"><a href="#做出本图的步骤" class="headerlink" title="做出本图的步骤"></a>做出本图的步骤</h3><ul>
 <li>做出俯视图五角星草图，然后拉伸，然后进行边倒圆，然后螺旋，然后画一条关于z轴平行空间线，空间线的作用是用于投影曲线，然后投影曲线设置为朝向直线选择刚刚的空间线，投影之后，隐藏掉所有遮挡视线的线，用投影曲线去做出管即可</li>
 </ul>
-<h2 id="4-9-项目24：雨伞"><a href="#4-9-项目24：雨伞" class="headerlink" title="4.9 项目24：雨伞"></a>4.9 项目24：雨伞</h2><p><img src="/pic/4.9.png" srcset="/img/loading.gif" lazyload alt="4.9"><img src="/pic/4.9UG.png" srcset="/img/loading.gif" lazyload alt="4.9UG"></p>
-<h2 id="4-10-项目25：旋转楼梯"><a href="#4-10-项目25：旋转楼梯" class="headerlink" title="4.10 项目25：旋转楼梯"></a>4.10 项目25：旋转楼梯</h2><p><img src="/pic/4.10.png" srcset="/img/loading.gif" lazyload alt="4.10"></p>
-<h3 id="阵列-螺旋"><a href="#阵列-螺旋" class="headerlink" title="阵列-螺旋"></a>阵列-螺旋</h3><h2 id="5-1-自底向上—机用平口虎钳（添加组件、约束、重用库）（5-1-5-3第五单元：装配建模）"><a href="#5-1-自底向上—机用平口虎钳（添加组件、约束、重用库）（5-1-5-3第五单元：装配建模）" class="headerlink" title="5.1 自底向上—机用平口虎钳（添加组件、约束、重用库）（5.1-5.3第五单元：装配建模）"></a>5.1 自底向上—机用平口虎钳（添加组件、约束、重用库）（5.1-5.3第五单元：装配建模）</h2><h3 id="装配图在创建文件时要选择装配"><a href="#装配图在创建文件时要选择装配" class="headerlink" title="装配图在创建文件时要选择装配"></a>装配图在创建文件时要选择装配</h3><p><img src="/pic/5.1.jpg" srcset="/img/loading.gif" lazyload alt="5.1"></p>
+<h2 id="4-9-项目24：雨伞"><a href="#4-9-项目24：雨伞" class="headerlink" title="4.9 项目24：雨伞"></a>4.9 项目24：雨伞</h2><p><img src="/pic/4.9.png" alt="4.9"><img src="/pic/4.9UG.png" alt="4.9UG"></p>
+<h2 id="4-10-项目25：旋转楼梯"><a href="#4-10-项目25：旋转楼梯" class="headerlink" title="4.10 项目25：旋转楼梯"></a>4.10 项目25：旋转楼梯</h2><p><img src="/pic/4.10.png" alt="4.10"></p>
+<h3 id="阵列-螺旋"><a href="#阵列-螺旋" class="headerlink" title="阵列-螺旋"></a>阵列-螺旋</h3><h2 id="5-1-自底向上—机用平口虎钳（添加组件、约束、重用库）（5-1-5-3第五单元：装配建模）"><a href="#5-1-自底向上—机用平口虎钳（添加组件、约束、重用库）（5-1-5-3第五单元：装配建模）" class="headerlink" title="5.1 自底向上—机用平口虎钳（添加组件、约束、重用库）（5.1-5.3第五单元：装配建模）"></a>5.1 自底向上—机用平口虎钳（添加组件、约束、重用库）（5.1-5.3第五单元：装配建模）</h2><h3 id="装配图在创建文件时要选择装配"><a href="#装配图在创建文件时要选择装配" class="headerlink" title="装配图在创建文件时要选择装配"></a>装配图在创建文件时要选择装配</h3><p><img src="/pic/5.1.jpg" alt="5.1"></p>
 <h3 id="基准坐标系的创建"><a href="#基准坐标系的创建" class="headerlink" title="基准坐标系的创建"></a>基准坐标系的创建</h3><ul>
 <li>基准平面三角标-基准坐标系<ul>
 <li>绝对坐标系</li>
@@ -1775,8 +1464,8 @@
 <li>部件导航器</li>
 <li>重用组</li>
 </ul>
-<h3 id="添加组件"><a href="#添加组件" class="headerlink" title="添加组件"></a>添加组件</h3><p><img src="/pic/5.11.jpg" srcset="/img/loading.gif" lazyload alt="添加组件对话框"></p>
-<h3 id="装配约束"><a href="#装配约束" class="headerlink" title="装配约束"></a>装配约束</h3><p><img src="/pic/5.12.jpg" srcset="/img/loading.gif" lazyload alt="装配约束对话框"></p>
+<h3 id="添加组件"><a href="#添加组件" class="headerlink" title="添加组件"></a>添加组件</h3><p><img src="/pic/5.11.jpg" alt="添加组件对话框"></p>
+<h3 id="装配约束"><a href="#装配约束" class="headerlink" title="装配约束"></a>装配约束</h3><p><img src="/pic/5.12.jpg" alt="装配约束对话框"></p>
 <ul>
 <li>装配约束扩展<ul>
 <li>首选接触（接触、对齐）<ul>
@@ -1821,7 +1510,7 @@
 </li>
 <li>然后再去装重用库里的文件即可，不然下次打开文件不会显示</li>
 </ul>
-<p><img src="/pic/5.13.jpg" srcset="/img/loading.gif" lazyload alt="可重用组件设置"></p>
+<p><img src="/pic/5.13.jpg" alt="可重用组件设置"></p>
 <h3 id="重用库快速引入方法"><a href="#重用库快速引入方法" class="headerlink" title="重用库快速引入方法"></a>重用库快速引入方法</h3><ul>
 <li>直接拖拽到你想装配到的地方，见图fast way<ul>
 <li>然后就会出现添加可重用组件的对话框，选择你要的参数即可<ul>
@@ -1837,12 +1526,12 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/5.14.png" srcset="/img/loading.gif" lazyload alt="fast way"></p>
+<p><img src="/pic/5.14.png" alt="fast way"></p>
 <h3 id="阵列组件"><a href="#阵列组件" class="headerlink" title="阵列组件"></a>阵列组件</h3><ul>
 <li>和建模中的阵列相同</li>
 <li>唯独选择参考的时候是要在此阵列组件才能参考</li>
 </ul>
-<h3 id="预览窗口"><a href="#预览窗口" class="headerlink" title="预览窗口"></a>预览窗口</h3><p><img src="/pic/5.15.jpg" srcset="/img/loading.gif" lazyload alt="预览窗口"></p>
+<h3 id="预览窗口"><a href="#预览窗口" class="headerlink" title="预览窗口"></a>预览窗口</h3><p><img src="/pic/5.15.jpg" alt="预览窗口"></p>
 <ul>
 <li>启用预览窗口是右下角的组件单独预览</li>
 <li>启用预览是在工作区和所有一起预览</li>
@@ -1850,10 +1539,10 @@
 <h3 id="螺栓（对齐和锁定）与接触的区别"><a href="#螺栓（对齐和锁定）与接触的区别" class="headerlink" title="螺栓（对齐和锁定）与接触的区别"></a>螺栓（对齐和锁定）与接触的区别</h3><ul>
 <li>对齐和锁定是专门用来装螺栓的，因为正常约束之后螺栓还是可以转的，所以使用对齐和锁定</li>
 </ul>
-<h2 id="5-2-自定向上—机用平口虎钳（爆炸图、子装配、替换组件）"><a href="#5-2-自定向上—机用平口虎钳（爆炸图、子装配、替换组件）" class="headerlink" title="5.2 自定向上—机用平口虎钳（爆炸图、子装配、替换组件）"></a>5.2 自定向上—机用平口虎钳（爆炸图、子装配、替换组件）</h2><p><img src="/pic/5.21.png" srcset="/img/loading.gif" lazyload alt="5.21"><img src="/pic/5.22.png" srcset="/img/loading.gif" lazyload alt="5.22"><img src="/pic/5.23.jpg" srcset="/img/loading.gif" lazyload alt="5.23"></p>
+<h2 id="5-2-自定向上—机用平口虎钳（爆炸图、子装配、替换组件）"><a href="#5-2-自定向上—机用平口虎钳（爆炸图、子装配、替换组件）" class="headerlink" title="5.2 自定向上—机用平口虎钳（爆炸图、子装配、替换组件）"></a>5.2 自定向上—机用平口虎钳（爆炸图、子装配、替换组件）</h2><p><img src="/pic/5.21.png" alt="5.21"><img src="/pic/5.22.png" alt="5.22"><img src="/pic/5.23.jpg" alt="5.23"></p>
 <h3 id="装配图步骤"><a href="#装配图步骤" class="headerlink" title="装配图步骤"></a>装配图步骤</h3><ul>
 <li>先建一个项目文件夹，然后将所有要装配的部件放进文件夹里，然后将可重用部件库设置为此文件夹，然后去创建装配项目保存在在此装配文件夹</li>
-<li>然后进行第一个部件的添加，然后将第一个部件固定，通过约束将其固定，然后去查看自由度（见图）确定是否固定，在添加部件时可以选择引用集<br><img src="/pic/5.24.jpg" srcset="/img/loading.gif" lazyload alt="查看自由度"></li>
+<li>然后进行第一个部件的添加，然后将第一个部件固定，通过约束将其固定，然后去查看自由度（见图）确定是否固定，在添加部件时可以选择引用集<br><img src="/pic/5.24.jpg" alt="查看自由度"></li>
 <li>然后去添加第二个部件，在添加部件对话框下，有个启用窗口预览和预览，如果觉得预览这个部件进去会很难约束，就关掉预览，然后再预览窗口进行约束，在这个添加组件的对话框进行约束，然后勾选预览确定是否约束到你想要的约束，然后去右键查看自由度，如果还有自由度就去约束</li>
 <li>然后如果下一个和另一个未进行装配的部件要去先进行装配的话，就新建一个装配的项目文件保存位置在此文件夹，这步称为子装配，然后就是刚刚的步骤</li>
 <li>重用库正确（修改路径，重新启动UG）对齐和锁定约束<ul>
@@ -1921,9 +1610,9 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/5.25.png" srcset="/img/loading.gif" lazyload alt="导出图片"><img src="/pic/5.26.png" srcset="/img/loading.gif" lazyload alt="导出图片对话框"></p>
+<p><img src="/pic/5.25.png" alt="导出图片"><img src="/pic/5.26.png" alt="导出图片对话框"></p>
 <h3 id="做装配图会出现的问题"><a href="#做装配图会出现的问题" class="headerlink" title="做装配图会出现的问题"></a>做装配图会出现的问题</h3><ol>
-<li><img src="/pic/question1.png" srcset="/img/loading.gif" lazyload alt="1"></li>
+<li><img src="/pic/question1.png" alt="1"></li>
 </ol>
 <ul>
 <li>造成的原因：部件改名&#x2F;部件被移动</li>
@@ -1993,12 +1682,12 @@
 </li>
 <li>然后会出现制图框表格，如果没有就去按照图中的制图框表格模板替换即可</li>
 </ul>
-<p><img src="/pic/6.1.jpg" srcset="/img/loading.gif" lazyload alt="制图框表格"><img src="/pic/6.11.jpg" srcset="/img/loading.gif" lazyload alt="制图框表格模板替换"></p>
+<p><img src="/pic/6.1.jpg" alt="制图框表格"><img src="/pic/6.11.jpg" alt="制图框表格模板替换"></p>
 <h3 id="投影视图"><a href="#投影视图" class="headerlink" title="投影视图"></a>投影视图</h3><ul>
 <li>菜单-插入-视图-投影</li>
 <li>见图中，以俯视图为主的向左向右向上向下的图会自动捕捉（如果不想自动捕捉，按住alt键—-引出向视图）</li>
 </ul>
-<p><img src="/pic/6.12.jpg" srcset="/img/loading.gif" lazyload alt="投影视图"></p>
+<p><img src="/pic/6.12.jpg" alt="投影视图"></p>
 <h3 id="向视图"><a href="#向视图" class="headerlink" title="向视图"></a>向视图</h3><ul>
 <li>在投影试图中，按住alt键放在相放的地方<ul>
 <li>定义铰链线（铰链线时指黄色的横线）<ul>
@@ -2019,7 +1708,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/6.13.jpg" srcset="/img/loading.gif" lazyload alt="基本视图对话框"></p>
+<p><img src="/pic/6.13.jpg" alt="基本视图对话框"></p>
 <h3 id="定向视图"><a href="#定向视图" class="headerlink" title="定向视图"></a>定向视图</h3><ul>
 <li>主页-基本视图-定向视图<ul>
 <li>将其摆成你想要的视图效果确定，然后放置即可</li>
@@ -2045,10 +1734,10 @@
 </ul>
 </li>
 </ul>
-<p><img src="/pic/6.14.jpg" srcset="/img/loading.gif" lazyload alt="6.11"><img src="/pic/6.15.jpg" srcset="/img/loading.gif" lazyload alt="6.12"><img src="/pic/6.16.jpg" srcset="/img/loading.gif" lazyload alt="6.13"><img src="/pic/6.17.jpg" srcset="/img/loading.gif" lazyload alt="6.14"></p>
+<p><img src="/pic/6.14.jpg" alt="6.11"><img src="/pic/6.15.jpg" alt="6.12"><img src="/pic/6.16.jpg" alt="6.13"><img src="/pic/6.17.jpg" alt="6.14"></p>
 <h2 id="6-2-项目2：案例2—半剖视图、轴测剖"><a href="#6-2-项目2：案例2—半剖视图、轴测剖" class="headerlink" title="6.2 项目2：案例2—半剖视图、轴测剖"></a>6.2 项目2：案例2—半剖视图、轴测剖</h2><h3 id="剖视图-简单剖和阶梯剖"><a href="#剖视图-简单剖和阶梯剖" class="headerlink" title="剖视图-简单剖和阶梯剖"></a>剖视图-简单剖和阶梯剖</h3><ul>
 <li>扩展<ul>
-<li>剖切现有的<img src="/pic/6.21.jpg" srcset="/img/loading.gif" lazyload alt="6.21"></li>
+<li>剖切现有的<img src="/pic/6.21.jpg" alt="6.21"></li>
 </ul>
 </li>
 </ul>
@@ -2072,10 +1761,10 @@
 </li>
 </ul>
 </li>
-<li>正确步骤过程图<img src="/pic/6.23.png" srcset="/img/loading.gif" lazyload alt="过程"></li>
+<li>正确步骤过程图<img src="/pic/6.23.png" alt="过程"></li>
 </ul>
 </li>
-<li>半剖示意图<img src="/pic/6.22.png" srcset="/img/loading.gif" lazyload alt="6.22"></li>
+<li>半剖示意图<img src="/pic/6.22.png" alt="6.22"></li>
 <li>扩展<ul>
 <li>将现有的图形半剖<ul>
 <li>正确的是中间会有点划线而不是中心实线（所以一般就是正常半剖，不会通过现有图形半剖）</li>
@@ -2097,7 +1786,7 @@
 </ul>
 <ol>
 <li>点击图形的右键，然后点击活动草图视图，然后草图中选择艺术样条，画完之后完成草图</li>
-<li>点击图形的右键，然后展开，然后去画空间线，如果菜单中没有就去打开曲线这个命令组<img src="/pic/6.31.png" srcset="/img/loading.gif" lazyload alt="如图"><ul>
+<li>点击图形的右键，然后展开，然后去画空间线，如果菜单中没有就去打开曲线这个命令组<img src="/pic/6.31.png" alt="如图"><ul>
 <li>画完曲线后，然后退出展开就是放大</li>
 </ul>
 </li>
@@ -2135,7 +1824,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="7-1-液压齿轮泵设计（7-1-7-5第七单元：产品设计实训）"><a href="#7-1-液压齿轮泵设计（7-1-7-5第七单元：产品设计实训）" class="headerlink" title="7.1 液压齿轮泵设计（7.1-7.5第七单元：产品设计实训）"></a>7.1 液压齿轮泵设计（7.1-7.5第七单元：产品设计实训）</h2><p><img src="/pic/7.11.jpg" srcset="/img/loading.gif" lazyload alt="图纸1"><img src="/pic/7.12.jpg" srcset="/img/loading.gif" lazyload alt="图纸2"><img src="/pic/7.13.jpg" srcset="/img/loading.gif" lazyload alt="图纸3"><img src="/pic/7.14.jpg" srcset="/img/loading.gif" lazyload alt="图纸4"><img src="/pic/7.15.jpg" srcset="/img/loading.gif" lazyload alt="图纸5"><img src="/pic/7.16.jpg" srcset="/img/loading.gif" lazyload alt="图纸6"><img src="/pic/7.17.jpg" srcset="/img/loading.gif" lazyload alt="图纸7"><img src="/pic/7.18.jpg" srcset="/img/loading.gif" lazyload alt="图纸8"><img src="/pic/7.19.jpg" srcset="/img/loading.gif" lazyload alt="图纸9"></p>
+<h2 id="7-1-液压齿轮泵设计（7-1-7-5第七单元：产品设计实训）"><a href="#7-1-液压齿轮泵设计（7-1-7-5第七单元：产品设计实训）" class="headerlink" title="7.1 液压齿轮泵设计（7.1-7.5第七单元：产品设计实训）"></a>7.1 液压齿轮泵设计（7.1-7.5第七单元：产品设计实训）</h2><p><img src="/pic/7.11.jpg" alt="图纸1"><img src="/pic/7.12.jpg" alt="图纸2"><img src="/pic/7.13.jpg" alt="图纸3"><img src="/pic/7.14.jpg" alt="图纸4"><img src="/pic/7.15.jpg" alt="图纸5"><img src="/pic/7.16.jpg" alt="图纸6"><img src="/pic/7.17.jpg" alt="图纸7"><img src="/pic/7.18.jpg" alt="图纸8"><img src="/pic/7.19.jpg" alt="图纸9"></p>
 <h3 id="齿轮"><a href="#齿轮" class="headerlink" title="齿轮"></a>齿轮</h3><ul>
 <li>菜单-齿轮工具-柱齿轮建模<ul>
 <li>创建齿轮<ul>
@@ -2157,7 +1846,7 @@
     </embed>
 </object>
 
-<h2 id="7-3-多轴大赛从动轴建模"><a href="#7-3-多轴大赛从动轴建模" class="headerlink" title="7.3 多轴大赛从动轴建模"></a>7.3 多轴大赛从动轴建模</h2><p><img src="/pic/7.3.png" srcset="/img/loading.gif" lazyload alt="7.3"></p>
+<h2 id="7-3-多轴大赛从动轴建模"><a href="#7-3-多轴大赛从动轴建模" class="headerlink" title="7.3 多轴大赛从动轴建模"></a>7.3 多轴大赛从动轴建模</h2><p><img src="/pic/7.3.png" alt="7.3"></p>
 <h3 id="缠绕曲线"><a href="#缠绕曲线" class="headerlink" title="缠绕曲线"></a>缠绕曲线</h3><ul>
 <li>曲线-缠绕曲线</li>
 </ul>
@@ -2165,417 +1854,5 @@
 <li>曲线-在面上偏置曲线</li>
 </ul>
 <h2 id="7-4-复习案例1—草图1"><a href="#7-4-复习案例1—草图1" class="headerlink" title="7.4 复习案例1—草图1"></a>7.4 复习案例1—草图1</h2><h2 id="7-5-复习案例2—曲面2"><a href="#7-5-复习案例2—曲面2" class="headerlink" title="7.5 复习案例2—曲面2"></a>7.5 复习案例2—曲面2</h2><h2 id="8-1-项目1：1-X理论题（8-1第八单元：UG理论题（1-X））"><a href="#8-1-项目1：1-X理论题（8-1第八单元：UG理论题（1-X））" class="headerlink" title="8.1 项目1：1+X理论题（8.1第八单元：UG理论题（1+X））"></a>8.1 项目1：1+X理论题（8.1第八单元：UG理论题（1+X））</h2><ul>
-<li>见链接<a target="_blank" rel="noopener" href="https://www.hzopo.top/2023/08/06/eaxm/">1+X理论题文章篇</a></li>
+<li>见链接<a href="https://www.hzopo.top/2023/08/06/eaxm/">1+X理论题文章篇</a></li>
 </ul>
-
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
-      
-    </div>
-  
-</div>
-
-
-              
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>UGNX12.0学习笔记</div>
-      <div>http://haozi520.github.io/2023/07/20/ug/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>HaoziOpO Studio Offical</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2023年7月20日</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>更新于</div>
-          <div>2023年8月13日</div>
-        </div>
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2023/08/06/%E5%B7%B2%E5%8F%91%E5%B8%83%E6%89%8B%E5%8A%A8%E4%B8%8B%E6%9E%B6%E6%96%87%E7%AB%A0/eaxm/" title="1+X理论题">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">1+X理论题</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2023/07/08/cadnotes/" title="CAD学习笔记">
-                        <span class="hidden-mobile">CAD学习笔记</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-  <article id="comments" lazyload>
-    
-  <div id="SOHUCS" sid='http://haozi520.github.io/2023/07/20/ug/'></div>
-  <script type="text/javascript">
-    Fluid.utils.loadComments('#SOHUCS', function() {
-      Fluid.utils.createScript("https://changyan.sohu.com/upload/changyan.js", function() {
-        window.changyan.api.config({"appid":"cywu0RevY","appkey":"33d819b39c409925432586cbd8659502"})
-      });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
-
-
-  </article>
-
-
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  <script>
-  Fluid.utils.createScript('https://lib.baomitu.com/mermaid/8.14.0/mermaid.min.js', function() {
-    mermaid.initialize({"theme":"default"});
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('mermaid' in window) {
-        mermaid.init();
-      }
-    });
-  });
-</script>
-
-
-
-
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://icp.gov.moe/?keyword=20230283" target="_blank">萌ICP备20230283号</a><br> <span>Powered by</span> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <span>Themed with</span> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a><br> <span>©HaoziOpO Studio All Rights reserved.</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
-    </div>
-  
-  
-    <div class="statistics">
-  
-  
-
-  
-    
-      <span id="busuanzi_container_site_pv" style="display: none">
-        总访问量 
-        <span id="busuanzi_value_site_pv"></span>
-         次
-      </span>
-    
-    
-      <span id="busuanzi_container_site_uv" style="display: none">
-        总访客数 
-        <span id="busuanzi_value_site_uv"></span>
-         人
-      </span>
-    
-    
-  
-</div>
-
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
-        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-        var res = [];
-        for (var item of el) {
-          res.push('.markdown-body > ' + item.trim());
-        }
-        if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
-        }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  <script  src="/js/local-search.js" ></script>
-
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-  
-  
-  </script>
-  <!-- 页面点击小红心 -->
-  <script type="text/javascript" src="/js/love.js"></script>
-  <!--浏览器搞笑标题-->
-  <script type="text/javascript" src="\js\FunnyTitle.js"></script>
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
-</body>
-</html>
