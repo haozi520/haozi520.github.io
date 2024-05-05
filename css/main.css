@@ -28,9 +28,9 @@ h6:hover > .anchorjs-link {
   -webkit-backface-visibility: hidden;
   transition: transform 0.05s ease-out;
 }
-@media (max-width: 100vh) {
+@media (max-width: 90vh) {
   .header-inner {
-    max-height: 100vw;
+    max-height: 111.11111111111111vw;
   }
   #board {
     margin-top: -1rem !important;
