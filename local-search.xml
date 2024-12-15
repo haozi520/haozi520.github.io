@@ -8,7 +8,7 @@
     <link href="/2024/12/03/test/"/>
     <url>/2024/12/03/test/</url>
     
-    <content type="html"><![CDATA[<h1 id="UG-全文件"><a href="#UG-全文件" class="headerlink" title="UG(全文件)"></a>UG(全文件)</h1><p><a href="https://haozi.lanzn.com/iS2z12h2ssud">https://haozi.lanzn.com/iS2z12h2ssud</a></p><h1 id="UG2-包预览图"><a href="#UG2-包预览图" class="headerlink" title="UG2(包预览图)"></a>UG2(包预览图)</h1><p><a href="https://haozi.lanzn.com/iD0u22i7ghyf">https://haozi.lanzn.com/iD0u22i7ghyf</a></p><h1 id="PLC"><a href="#PLC" class="headerlink" title="PLC"></a>PLC</h1><p><a href="https://haozi.lanzn.com/iyvZ52i7ew0j">https://haozi.lanzn.com/iyvZ52i7ew0j</a></p>]]></content>
+    <content type="html"><![CDATA[<p>(ugall)[<a href="https://haozi.lanzn.com/iS2z12h2ssud]">https://haozi.lanzn.com/iS2z12h2ssud]</a></p><p>(ugtu)[<a href="https://haozi.lanzn.com/iD0u22i7ghyf]">https://haozi.lanzn.com/iD0u22i7ghyf]</a></p><p>(p)[<a href="https://haozi.lanzn.com/iyvZ52i7ew0j]">https://haozi.lanzn.com/iyvZ52i7ew0j]</a></p>]]></content>
     
     
     
@@ -372,11 +372,33 @@
   
   
   <entry>
+    <title>关于我</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>于2021年2月1日建成的网络工作室<br>这里是耗子opo工作室的官方网站，同时也是耗子的个人博客网站</p><p><strong>工作室官网<a href="http://www.hzopo.top/">http://www.hzopo.top</a>（本网站主页）</strong></p><p><strong>耗子的bilibili个人主页<a href="https://space.bilibili.com/108129189">https://space.bilibili.com/108129189</a></strong></p><p><strong>工作室的bilibili主页<a href="https://space.bilibili.com/693427497">https://space.bilibili.com/693427497</a></strong></p><h2 id="与HaoziOpO-Stuido合作的企业"><a href="#与HaoziOpO-Stuido合作的企业" class="headerlink" title="与HaoziOpO Stuido合作的企业"></a>与<strong>HaoziOpO Stuido</strong>合作的企业</h2><table><thead><tr><th>企业名称</th><th>企业官网</th></tr></thead><tbody><tr><td>Reply文化传媒有限公司</td><td><a href="https://www.link3.cc/moxxie">https://www.link3.cc/moxxie</a></td></tr><tr><td>和谐的人类本质集团</td><td><a href="https://hhnlab.cn/">https://hhnlab.cn/</a></td></tr></tbody></table><p><em>如果对HaoziOpO Stuido感兴趣，想要加入的话，请扫描以下二维码联系我</em></p><p><img src="/img/wechat.jpg" alt="wechat"></p><p><em>工作室的logo</em></p><p><img src="/img/hz.png" alt="logo"></p>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>TIME</title>
     <link href="/"/>
     <url>/</url>
     
     <content type="html"><![CDATA[<!--time clock(easy)--><!DOCTYPE html><html><head><meta charset="utf-8">    <style>    /*time clock style*/        #clock {            font-family: Arial, Helvetica, sans-serif;            background-image: -webkit-linear-gradient(left,#D81159, #E53A40 10%, #FFBC42 20%, #75D701 30%, #30A9DE 40%,#D81159 50%, #E53A40 60%, #FFBC42 70%, #75D701 80%, #30A9DE 90%,#D81159);            -webkit-background-clip: text;            color:transparent;            -webkit-background-clip: text;             -webkit-text-fill-color: transparent;             background-color: transparent;             font-size:70px;            width: auto;            height: auto;            text-align: center;            line-height: 100px;        }        #date {            font-family: Arial, Helvetica, sans-serif;             font-size: 40px;            font-weight: bolder;             background-image: linear-gradient(#FFAC03, #DE03FF,#03FFBC,#71FF03,#FFC503);            background-clip: text;            -webkit-background-clip: text;            -webkit-text-fill-color: transparent;             -webkit-text-stroke: 1px #333;            width: auto;            height: auto;            text-align: center;            line-height: 100px;            border-radius: 10px;        }        .text{            font-size: 40px;            text-align:center;            background-image: linear-gradient(#0842E4, #03FFB4);            background-clip: text;            -webkit-background-clip: text;            -webkit-text-fill-color: transparent;             -webkit-text-stroke: 1px #333;        }    </style></head><body><p class="text">渐变文字时钟+今日日期</p>    <!--create a div to show clock-->    <div id="clock"></div>    <!--<javascript code-->    <script>        // set a function to update clock        function updateClock() {        // set now time        var now = new Date();        // set now hour minutes second        var hour = now.getHours();        var minute = now.getMinutes();        var second = now.getSeconds();        var millisecond = now.getMilliseconds();        // if? add zero        if (hour < 10){            hour = "0" + hour;        }        if (minute < 10){            minute = "0" + minute;        }        if (second < 10){            second = "0" +second;        }        // mix to time stlye        var time = hour + ":" + minute + ":" +second + ":" +millisecond;        // time to show in div        document.getElementById("clock").innerHTML = time;        }        // every second update time function        setInterval(updateClock,1);    </script>    <div id="date"></div>    <script>        function updateDate() {            var now = new Date();            var year = now.getFullYear();            var month = now.getMonth() + 1;            var day = now.getDate();            if (month < 10){                month = + month;            }            if (day < 10){                day = + day;            }        var date = year +"年"+ month +"月"+ day +"日" ;        document.getElementById("date").innerHTML = date;       }        setInterval(updateDate,1000);    </script></body></html>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<p>CSGO-exGsD-4LFWj-o3Oif-ywffk-5b2UO 蓝色中间点准星</p><p>CSGO-7FO9x-NUcFk-NSpE3-HEy7L-aAweM 动态准星</p><p>CSGO-amGdn-2V75P-pBndK-sphNF-UcBpF</p>]]></content>
     
   </entry>
   
@@ -398,7 +420,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<h1 id="我想把世界上最好的都给你，却发现世界上最好的就是你"><a href="#我想把世界上最好的都给你，却发现世界上最好的就是你" class="headerlink" title="我想把世界上最好的都给你，却发现世界上最好的就是你"></a>我想把世界上最好的都给你，却发现世界上最好的就是你</h1><p>我喜欢你，孙馨</p><p>从我从21班转到20班的第一刻，我就喜欢上了你，可能这就是一见钟情吧，命中注定，每次看到你的笑容都会让我真正的开心，我已经很久很久没有这种感觉了，感谢上帝，让我遇见了你，让我明白了人生的意义，让我明白活着的意义，就是为了你。</p><p>虽然我现在无法给你稳定的幸福，但是我会为了你拼尽全力，为了你一切都是值得的，每次你被同学欺负的时候，我心里会十分的痛，但是我又无法在那种场合去为你做什么，因为在别人眼里我可能只是一个普通人，和你没有任何关系，所以我想保护你一辈子，做我女朋友吧</p><p>喜欢你不是三分钟热度，是蓄谋已久后的，深思熟虑。</p><p>你若粗茶淡饭，与我同甘共苦，我便披城露胆，陪你海枯石烂。你若举案齐眉，给我嘘寒问暖，我便重惜轻怜，护你一世长安。</p><p><a href="https://postimg.cc/f36VH9pJ"><img src="https://i.postimg.cc/265nSdxF/image.jpg" alt="image.jpg"></a></p><p><a href="https://postimg.cc/0bKPnyDB">image.jpg</a><br><a href="https://postimg.cc/f36VH9pJ">image.jpg</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="回来"><a href="#回来" class="headerlink" title="回来"></a>回来</h1><p>作词：侯泓羽</p><p>Markdown编者：袁昊</p><h2 id="翻开陈旧的日记，那是我们曾经的回忆熟悉人陌生的字迹，把我拉入回忆一张张或大或小的照片，一次次出现在眼前我们之前是那么的甜蜜，可你如今在哪里房间里，到处是你的信息，闭上眼，好像你还在眼前地上的那封信，是我像流星许愿给自己的坚定我想找回曾经的你，翻遍世间的每个角落，不见踪迹每次梦到你，醒来之后都不见身影久久不能平静无法面对你的离开相信总有一天你会回来想起丰收的那一刻，时间静止没来得及及说再见，你已转身离开我鼓起勇气，跌跌撞撞奔向你看淡汽车渐行渐远我含着泪，发誓不再打扰你我回归了往日一样繁忙的生活只是少了一个你我慢慢习惯，夜深人静的孤独感每天期盼，开门的一刻你就在门前唱着熟悉的歌，骗自己你依然在无法面对你的离开相信总有一天，你会回来希望你会回来"><a href="#翻开陈旧的日记，那是我们曾经的回忆熟悉人陌生的字迹，把我拉入回忆一张张或大或小的照片，一次次出现在眼前我们之前是那么的甜蜜，可你如今在哪里房间里，到处是你的信息，闭上眼，好像你还在眼前地上的那封信，是我像流星许愿给自己的坚定我想找回曾经的你，翻遍世间的每个角落，不见踪迹每次梦到你，醒来之后都不见身影久久不能平静无法面对你的离开相信总有一天你会回来想起丰收的那一刻，时间静止没来得及及说再见，你已转身离开我鼓起勇气，跌跌撞撞奔向你看淡汽车渐行渐远我含着泪，发誓不再打扰你我回归了往日一样繁忙的生活只是少了一个你我慢慢习惯，夜深人静的孤独感每天期盼，开门的一刻你就在门前唱着熟悉的歌，骗自己你依然在无法面对你的离开相信总有一天，你会回来希望你会回来" class="headerlink" title="翻开陈旧的日记，那是我们曾经的回忆熟悉人陌生的字迹，把我拉入回忆一张张或大或小的照片，一次次出现在眼前我们之前是那么的甜蜜，可你如今在哪里房间里，到处是你的信息，闭上眼，好像你还在眼前地上的那封信，是我像流星许愿给自己的坚定我想找回曾经的你，翻遍世间的每个角落，不见踪迹每次梦到你，醒来之后都不见身影久久不能平静无法面对你的离开相信总有一天你会回来想起丰收的那一刻，时间静止没来得及及说再见，你已转身离开我鼓起勇气，跌跌撞撞奔向你看淡汽车渐行渐远我含着泪，发誓不再打扰你我回归了往日一样繁忙的生活只是少了一个你我慢慢习惯，夜深人静的孤独感每天期盼，开门的一刻你就在门前唱着熟悉的歌，骗自己你依然在无法面对你的离开相信总有一天，你会回来希望你会回来  "></a>翻开陈旧的日记，那是我们曾经的回忆<br>熟悉人陌生的字迹，把我拉入回忆<br>一张张或大或小的照片，一次次出现在眼前<br>我们之前是那么的甜蜜，可你如今在哪里<br>房间里，到处是你的信息，闭上眼，好像你还在眼前<br>地上的那封信，是我像流星许愿<br>给自己的坚定<br>我想找回曾经的你，翻遍世间的每个角落，不见踪迹<br>每次梦到你，醒来之后都不见身影<br>久久不能平静<br>无法面对你的离开<br>相信总有一天你会回来<br>想起丰收的那一刻，时间静止<br>没来得及及说再见，你已转身离开<br>我鼓起勇气，跌跌撞撞奔向你<br>看淡汽车渐行渐远<br>我含着泪，发誓不再打扰你<br>我回归了往日一样繁忙的生活<br>只是少了一个你<br>我慢慢习惯，夜深人静的孤独感<br>每天期盼，开门的一刻你就在门前<br>唱着熟悉的歌，骗自己你依然在<br>无法面对你的离开<br>相信总有一天，你会回来<br>希望你会回来  </h2>]]></content>
     
   </entry>
   
@@ -420,29 +442,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<p>CSGO-exGsD-4LFWj-o3Oif-ywffk-5b2UO 蓝色中间点准星</p><p>CSGO-7FO9x-NUcFk-NSpE3-HEy7L-aAweM 动态准星</p><p>CSGO-amGdn-2V75P-pBndK-sphNF-UcBpF</p>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>关于我</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>于2021年2月1日建成的网络工作室<br>这里是耗子opo工作室的官方网站，同时也是耗子的个人博客网站</p><p><strong>工作室官网<a href="http://www.hzopo.top/">http://www.hzopo.top</a>（本网站主页）</strong></p><p><strong>耗子的bilibili个人主页<a href="https://space.bilibili.com/108129189">https://space.bilibili.com/108129189</a></strong></p><p><strong>工作室的bilibili主页<a href="https://space.bilibili.com/693427497">https://space.bilibili.com/693427497</a></strong></p><h2 id="与HaoziOpO-Stuido合作的企业"><a href="#与HaoziOpO-Stuido合作的企业" class="headerlink" title="与HaoziOpO Stuido合作的企业"></a>与<strong>HaoziOpO Stuido</strong>合作的企业</h2><table><thead><tr><th>企业名称</th><th>企业官网</th></tr></thead><tbody><tr><td>Reply文化传媒有限公司</td><td><a href="https://www.link3.cc/moxxie">https://www.link3.cc/moxxie</a></td></tr><tr><td>和谐的人类本质集团</td><td><a href="https://hhnlab.cn/">https://hhnlab.cn/</a></td></tr></tbody></table><p><em>如果对HaoziOpO Stuido感兴趣，想要加入的话，请扫描以下二维码联系我</em></p><p><img src="/img/wechat.jpg" alt="wechat"></p><p><em>工作室的logo</em></p><p><img src="/img/hz.png" alt="logo"></p>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<h1 id="回来"><a href="#回来" class="headerlink" title="回来"></a>回来</h1><p>作词：侯泓羽</p><p>Markdown编者：袁昊</p><h2 id="翻开陈旧的日记，那是我们曾经的回忆熟悉人陌生的字迹，把我拉入回忆一张张或大或小的照片，一次次出现在眼前我们之前是那么的甜蜜，可你如今在哪里房间里，到处是你的信息，闭上眼，好像你还在眼前地上的那封信，是我像流星许愿给自己的坚定我想找回曾经的你，翻遍世间的每个角落，不见踪迹每次梦到你，醒来之后都不见身影久久不能平静无法面对你的离开相信总有一天你会回来想起丰收的那一刻，时间静止没来得及及说再见，你已转身离开我鼓起勇气，跌跌撞撞奔向你看淡汽车渐行渐远我含着泪，发誓不再打扰你我回归了往日一样繁忙的生活只是少了一个你我慢慢习惯，夜深人静的孤独感每天期盼，开门的一刻你就在门前唱着熟悉的歌，骗自己你依然在无法面对你的离开相信总有一天，你会回来希望你会回来"><a href="#翻开陈旧的日记，那是我们曾经的回忆熟悉人陌生的字迹，把我拉入回忆一张张或大或小的照片，一次次出现在眼前我们之前是那么的甜蜜，可你如今在哪里房间里，到处是你的信息，闭上眼，好像你还在眼前地上的那封信，是我像流星许愿给自己的坚定我想找回曾经的你，翻遍世间的每个角落，不见踪迹每次梦到你，醒来之后都不见身影久久不能平静无法面对你的离开相信总有一天你会回来想起丰收的那一刻，时间静止没来得及及说再见，你已转身离开我鼓起勇气，跌跌撞撞奔向你看淡汽车渐行渐远我含着泪，发誓不再打扰你我回归了往日一样繁忙的生活只是少了一个你我慢慢习惯，夜深人静的孤独感每天期盼，开门的一刻你就在门前唱着熟悉的歌，骗自己你依然在无法面对你的离开相信总有一天，你会回来希望你会回来" class="headerlink" title="翻开陈旧的日记，那是我们曾经的回忆熟悉人陌生的字迹，把我拉入回忆一张张或大或小的照片，一次次出现在眼前我们之前是那么的甜蜜，可你如今在哪里房间里，到处是你的信息，闭上眼，好像你还在眼前地上的那封信，是我像流星许愿给自己的坚定我想找回曾经的你，翻遍世间的每个角落，不见踪迹每次梦到你，醒来之后都不见身影久久不能平静无法面对你的离开相信总有一天你会回来想起丰收的那一刻，时间静止没来得及及说再见，你已转身离开我鼓起勇气，跌跌撞撞奔向你看淡汽车渐行渐远我含着泪，发誓不再打扰你我回归了往日一样繁忙的生活只是少了一个你我慢慢习惯，夜深人静的孤独感每天期盼，开门的一刻你就在门前唱着熟悉的歌，骗自己你依然在无法面对你的离开相信总有一天，你会回来希望你会回来  "></a>翻开陈旧的日记，那是我们曾经的回忆<br>熟悉人陌生的字迹，把我拉入回忆<br>一张张或大或小的照片，一次次出现在眼前<br>我们之前是那么的甜蜜，可你如今在哪里<br>房间里，到处是你的信息，闭上眼，好像你还在眼前<br>地上的那封信，是我像流星许愿<br>给自己的坚定<br>我想找回曾经的你，翻遍世间的每个角落，不见踪迹<br>每次梦到你，醒来之后都不见身影<br>久久不能平静<br>无法面对你的离开<br>相信总有一天你会回来<br>想起丰收的那一刻，时间静止<br>没来得及及说再见，你已转身离开<br>我鼓起勇气，跌跌撞撞奔向你<br>看淡汽车渐行渐远<br>我含着泪，发誓不再打扰你<br>我回归了往日一样繁忙的生活<br>只是少了一个你<br>我慢慢习惯，夜深人静的孤独感<br>每天期盼，开门的一刻你就在门前<br>唱着熟悉的歌，骗自己你依然在<br>无法面对你的离开<br>相信总有一天，你会回来<br>希望你会回来  </h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="我想把世界上最好的都给你，却发现世界上最好的就是你"><a href="#我想把世界上最好的都给你，却发现世界上最好的就是你" class="headerlink" title="我想把世界上最好的都给你，却发现世界上最好的就是你"></a>我想把世界上最好的都给你，却发现世界上最好的就是你</h1><p>我喜欢你，孙馨</p><p>从我从21班转到20班的第一刻，我就喜欢上了你，可能这就是一见钟情吧，命中注定，每次看到你的笑容都会让我真正的开心，我已经很久很久没有这种感觉了，感谢上帝，让我遇见了你，让我明白了人生的意义，让我明白活着的意义，就是为了你。</p><p>虽然我现在无法给你稳定的幸福，但是我会为了你拼尽全力，为了你一切都是值得的，每次你被同学欺负的时候，我心里会十分的痛，但是我又无法在那种场合去为你做什么，因为在别人眼里我可能只是一个普通人，和你没有任何关系，所以我想保护你一辈子，做我女朋友吧</p><p>喜欢你不是三分钟热度，是蓄谋已久后的，深思熟虑。</p><p>你若粗茶淡饭，与我同甘共苦，我便披城露胆，陪你海枯石烂。你若举案齐眉，给我嘘寒问暖，我便重惜轻怜，护你一世长安。</p><p><a href="https://postimg.cc/f36VH9pJ"><img src="https://i.postimg.cc/265nSdxF/image.jpg" alt="image.jpg"></a></p><p><a href="https://postimg.cc/0bKPnyDB">image.jpg</a><br><a href="https://postimg.cc/f36VH9pJ">image.jpg</a></p>]]></content>
     
   </entry>
   
